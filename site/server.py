@@ -17,3 +17,7 @@ Mailer = Mail(FlaskServer);#Mail handler
 DB = SQLAlchemy(FlaskServer);#Sqlalchemy database handler
 import models;
 engine = create_engine('mysqli://tcid:tcid@localhost/tcid);#set username, password, and database 
+
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
