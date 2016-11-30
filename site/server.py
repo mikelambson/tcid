@@ -5,6 +5,7 @@ from flask_socketio import SocketIO, send, emit, join_room, leave_room, close_ro
 from flask_mail import Mail, Message;
 from flask_socketio import join_room;
 from flask_sqlalchemy import SQLAlchemy;
+from sqlalchemy.dialects.mysql import DATETIME, TEXT, TINYINT, VARCHAR
 from sqlalchemy import create_engine;#Engine handler
 #from PIL import Image;
 #from logging.handlers import RotatingFileHandler;
@@ -23,4 +24,4 @@ def hello_world():
     return 'Hello, World!';
 
 if __name__ == "__main__":
-    FlaskServer.run();
+    FlaskServer.run(host="0.0.0.0", port=int("3000"), debug=True);
