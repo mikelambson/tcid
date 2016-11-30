@@ -4,7 +4,8 @@ from flask import Flask, jsonify, request, render_template, send_from_directory;
 from flask_socketio import SocketIO, send, emit, join_room, leave_room, close_room;
 from flask_mail import Mail, Message;
 from flask_socketio import join_room;
-from flask_sqlalchemy import SQLAlchemy; 
+from flask_sqlalchemy import SQLAlchemy;
+from sqlalchemy.dialects.mysql import BIGINT, DATETIME, TEXT, TINYINT, VARCHAR
 from sqlalchemy import create_engine;#Engine handler
 #from PIL import Image;
 #from logging.handlers import RotatingFileHandler;
