@@ -8,7 +8,7 @@ class Serial_owners(DB.Model):
 	owners_id = DB.relationship(DB.Integer, DB.ForeignKey('owners.id'), lazy='joined');
 	created_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'));
 	created_at = DB.Column(DB.DateTime);
-	updated_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'), nullable=True);
+	updated_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'));
 	updated_at = DB.Column(DB.DateTime, nullable=True);
 
 	def __init__(self, created_at, updated_at):
