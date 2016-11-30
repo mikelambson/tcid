@@ -11,7 +11,7 @@ class Deliveries(DB.Model):
 	start_user_id = DB.relationship(DB.Integer, foreign_keys='user.id');
 	stop_time = DB.Column(DB.DateTime);
 	stop_user_id = DB.relationship(DB.Integer, foreign_keys='user.id');
-	status = DB.Column(DB.Tinyint);
+	status = DB.Column(DB.Tinyint(1));
 	created_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'));
 	created_at = DB.Column(DB.DateTime);
 	updated_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'), nullable=True);
