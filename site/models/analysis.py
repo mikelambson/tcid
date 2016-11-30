@@ -17,7 +17,7 @@ class Analysis(DB.Model):
 	updated_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'), nullable=True);
 	updated_at = DB.Column(DB.DateTime, nullable=True);
 
-  def __init__(self, start, stop, measured_cfs, total_af, created_at,updated_at):
+	def __init__(self, start, stop, measured_cfs, total_af, created_at,updated_at):
 		self.start = start;
 		self.stop = stop;
 		self.total_af = total_af;
