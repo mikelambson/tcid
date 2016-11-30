@@ -9,7 +9,7 @@ class Roles(DB.Model):
 	district_id = DB.relationship(DB.Integer, DB.ForeignKey('district.id'));
 	created_by = DB.relationship(DB.Integer, DB.ForeignKey('users.id'));
 	created_at = DB.Column(DB.DateTime);
-	updated_by = DB.relationship(DB.Integer, DB.ForeignKey('users.id'), nullable=True);
+	updated_by = DB.relationship(DB.Integer, DB.ForeignKey('users.id'));
 	updated_at = DB.Column(DB.DateTime, nullable=True);
 
 
