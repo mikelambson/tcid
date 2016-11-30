@@ -5,7 +5,7 @@ from server import DB, FlaskServer;
 
 class Phones(DB.Model):
 	id = DB.Column(DB.Integer, primary_key=True, autoincrement=True);
-	phone = DB.Column(DB.Varchar(20));
+	phone = DB.Column(DB.String(20));
 	created_by = DB.relationship(DB.Integer, DB.ForeignKey('users.id'));
 	created_at = DB.Column(DB.DateTime);
 	updated_by = DB.relationship(DB.Integer, DB.ForeignKey('users.id'), nullable=True);
