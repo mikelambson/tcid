@@ -1,5 +1,5 @@
 #Import flask libraries
-import json, re, os, datetime, paypalrestsdk, logging;#Import general libraries
+import json, re, os, datetime, logging;#Import general libraries
 from flask import Flask, jsonify, request, render_template, send_from_directory;
 from flask_socketio import SocketIO, send, emit, join_room, leave_room, close_room;
 from flask_mail import Mail, Message;
