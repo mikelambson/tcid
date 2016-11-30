@@ -17,8 +17,8 @@ Interactive = SocketIO(FlaskServer);#Socket handler
 Mailer = Mail(FlaskServer);#Mail handler
 DB = SQLAlchemy(FlaskServer);#Sqlalchemy database handler
 import models;
-#engine = create_engine('mysqli://tcid:tcid@localhost/tcid);#set username, password, and database 
-
+engine = create_engine('mysql+mysqli://tcid:tcid@localhost/tcid?charset=utf8mb4_unicode_520_ci)
+                       
 @FlaskServer.route('/')
 def hello_world():
     return 'Hello, World!';
