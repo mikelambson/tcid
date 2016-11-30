@@ -5,12 +5,12 @@ from server import DB, FlaskServer;
 
 class Permissions(DB.Model):
 	id = DB.Column(DB.Integer, primary_key=True, autoincrement=True);
-	schedule_orders = DB.Column(DB.Integer(20));
-	manage_user = DB.Column(DB.Integer(20));
-	manage_role	= DB.Column(DB.Integer(20));
-	manage_orders = DB.Column(DB.Integer(20));
-	update_orders = DB.Column(DB.Integer(20));
-	view_orders = DB.Column(DB.Integer(20));
+	schedule_orders = DB.Column(DB.Integer);
+	manage_user = DB.Column(DB.Integer);
+	manage_role	= DB.Column(DB.Integer);
+	manage_orders = DB.Column(DB.Integer);
+	update_orders = DB.Column(DB.Integer);
+	view_orders = DB.Column(DB.Integer);
 	created_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'));
 	created_at = DB.Column(DB.DateTime);
 	updated_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'));
