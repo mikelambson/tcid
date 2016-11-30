@@ -5,7 +5,7 @@ from server import DB, FlaskServer;
 
 class Laterals(DB.Model):
 	id = DB.Column(DB.Integer, primary_key=True, autoincrement=True);
-	name = DB.Column(DB.Varchar(20));
+	name = DB.Column(DB.String(20));
 	lateral_location = DB.Column(DB.Text, nullable=True);
 	location_gps = DB.Column(DB.Text, nullable=True);
 	metered = DB.Column(DB.Boolean);
