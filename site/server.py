@@ -19,7 +19,7 @@ import models;
 engine = create_engine('mysql://tcid:tcid@localhost/tcid?charset=utf8mb4_unicode_520_ci')
                        
 @FlaskServer.route('/')
-def hello_world():
+def index():
 	return render_template('index.html');
 
 if __name__ == "__main__":
