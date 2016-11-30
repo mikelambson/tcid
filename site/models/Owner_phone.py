@@ -1,7 +1,7 @@
 import datetime, re;
 from sqlalchemy.orm import validates;
 from server import DB, FlaskServer;
-from components.validation import validate_word;
+
 
 class Owner_phone(DB.Model):
 	id = DB.Column(DB.Integer, primary_key=True, autoincrement=True);
