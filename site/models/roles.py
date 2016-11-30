@@ -5,7 +5,7 @@ from server import DB, FlaskServer;
 
 class Roles(DB.Model):
 	id = DB.Column(DB.Integer, primary_key=True, autoincrement=True);
-	name = DB.Column(DB.String(20);
+	name = DB.Column(DB.String(20));
 	district_id = DB.relationship(DB.Integer, DB.ForeignKey('district.id'));
 	created_by = DB.relationship(DB.Integer, DB.ForeignKey('users.id'));
 	created_at = DB.Column(DB.DateTime);
