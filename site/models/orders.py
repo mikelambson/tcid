@@ -17,7 +17,7 @@ class Orders(DB.Model):
 	pending_analysis = DB.Column(DB.Boolean);
 	created_by = DB.relationship(DB.Integer, DB.ForeignKey('users.id'));
 	created_at = DB.Column(DB.DateTime);
-	updated_by = DB.relationship(DB.Integer, DB.ForeignKey('users.id'), nullable=True);
+	updated_by = DB.relationship(DB.Integer, DB.ForeignKey('users.id'));
 	updated_at = DB.Column(DB.DateTime, nullable=True);
 
 	def __init__(self, order_no, approx_cfs, approx_hrs, approx_af, order_time, balance, adjust, pending_analysis, created_at,updated_at):
