@@ -8,7 +8,7 @@ class Laterals(DB.Model):
 	name = DB.Column(DB.Varchar(20));
 	lateral_location = DB.Column(DB.Text, nullable=True);
 	location_gps = DB.Column(DB.Text, nullable=True);
-	metered = DB.Column(DB.Tinyint(1));
+	metered = DB.Column(DB.Boolean);
 	created_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'));
 	created_at = DB.Column(DB.DateTime);
 	updated_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'), nullable=True);
