@@ -16,7 +16,7 @@ FlaskServer.config.from_object(os.getenv("SERVER_ENV") if os.getenv("SERVER_ENV"
 Mailer = Mail(FlaskServer);#Mail handler
 DB = SQLAlchemy(FlaskServer);#Sqlalchemy database handler
 import models;
-engine = create_engine('mysqli://tcid:tcid@localhost/tcid);#set username, password, and database 
+#engine = create_engine('mysqli://tcid:tcid@localhost/tcid);#set username, password, and database 
 
 @app.route('/')
 def hello_world():
