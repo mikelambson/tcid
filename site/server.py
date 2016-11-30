@@ -18,6 +18,9 @@ DB = SQLAlchemy(FlaskServer);#Sqlalchemy database handler
 import models;
 #engine = create_engine('mysqli://tcid:tcid@localhost/tcid);#set username, password, and database 
 
-@app.route('/')
+@FlaskServer.route('/')
 def hello_world():
-    return 'Hello, World!'
+    return 'Hello, World!';
+
+if __name__ == "__main__":
+    FlaskServer.run();
