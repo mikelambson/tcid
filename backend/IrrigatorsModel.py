@@ -3,7 +3,7 @@ from sqlalchemy.orm import validates;
 from server import DB, FlaskServer;
 from components.validation import validate_word;
 
-class Owner_irrigators(DB.Model):
+class Irrigators(DB.Model):
 	id = DB.Column(DB.Integer, primary_key=True, autoincrement=True);
 	name = DB.Column(DB.Integer(20));
 	notation = DB.Column(DB.Text);
