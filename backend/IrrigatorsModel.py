@@ -7,7 +7,6 @@ class Owner_irrigators(DB.Model):
 	id = DB.Column(DB.Integer, primary_key=True, autoincrement=True);
 	name = DB.Column(DB.Integer(20));
 	notation = DB.Column(DB.Text);
-	irrigators_phone_id = DB.relationship(DB.Integer, DB.ForeignKey('irrigators_phone.id'), lazy='joined');
 	created_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'));
 	created_at = DB.Column(DB.DateTime);
 	updated_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'), nullable=True);
