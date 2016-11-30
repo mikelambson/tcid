@@ -9,6 +9,6 @@ class User_roles(DB.Model):
 	role_id = DB.Column(DB.Integer, DB.ForeignKey('roles.id'));
 	created_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'));
 	created_at = DB.Column(DB.DateTime);
-	updated_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'), nullable=True);
+	updated_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'));
 	updated_at = DB.Column(DB.DateTime, nullable=True);
 		
