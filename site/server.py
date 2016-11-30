@@ -7,9 +7,9 @@ from flask_socketio import join_room;
 from flask_sqlalchemy import SQLAlchemy; 
 from sqlalchemy import create_engine;#Engine handler
 #from PIL import Image;
-from logging.handlers import RotatingFileHandler;
-from logging import Formatter;
-import environment, recorder;#Import custom libraries
+#from logging.handlers import RotatingFileHandler;
+#from logging import Formatter;
+#import environment, recorder;#Import custom libraries
 FlaskServer = Flask(__name__);#Dynamic web server
 Interactive = SocketIO(FlaskServer);#Socket handler
 FlaskServer.config.from_object(os.getenv("SERVER_ENV") if os.getenv("SERVER_ENV") else "environment.Testing");
