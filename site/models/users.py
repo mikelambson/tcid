@@ -5,9 +5,9 @@ from server import DB, FlaskServer;
 
 class Users(DB.Model):
 	id = DB.Column(DB.Integer, primary_key=True, autoincrement=True);
-	login = DB.Column(DB.Varchar(40), unique=True);
-	password = DB.Column(DB.Varchar(400);
-	protected = DB.Column(DB.Tinyint(1));
+	login = DB.Column(DB.String(40), unique=True);
+	password = DB.Column(DB.String(400);
+	protected = DB.Column(DB.Boolean);
 	created_at = DB.Column(DB.DateTime);
 	updated_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'), nullable=True);
 	updated_at = DB.Column(DB.DateTime, nullable=True);
