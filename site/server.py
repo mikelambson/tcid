@@ -6,7 +6,7 @@ from flask_mail import Mail, Message;
 from flask_socketio import join_room;
 from flask_sqlalchemy import SQLAlchemy; 
 from sqlalchemy import create_engine;#Engine handler
-from PIL import Image;
+#from PIL import Image;
 from logging.handlers import RotatingFileHandler;
 from logging import Formatter;
 import environment, recorder;#Import custom libraries
