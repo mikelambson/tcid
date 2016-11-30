@@ -11,7 +11,7 @@ class Laterals(DB.Model):
 	metered = DB.Column(DB.Boolean);
 	created_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'));
 	created_at = DB.Column(DB.DateTime);
-	updated_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'), nullable=True);
+	updated_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'));
 	updated_at = DB.Column(DB.DateTime, nullable=True);
 
 	def __init__(self, name, lateral_location, location_gps, metered, created_at,updated_at):
