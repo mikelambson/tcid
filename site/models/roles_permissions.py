@@ -3,7 +3,7 @@ from sqlalchemy.orm import validates;
 from server import DB, FlaskServer;
 
 
-class Role_permissions(DB.Model):
+class Roles_permissions(DB.Model):
 	id = DB.Column(DB.Integer, primary_key=True, autoincrement=True);
 	role_id = DB.relationship(DB.Integer, DB.ForeignKey('roles.id'));
 	permission_id = DB.relationship(DB.Integer, DB.ForeignKey('permissions.id'));
