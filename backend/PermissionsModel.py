@@ -5,7 +5,7 @@ from components.validation import validate_word;
 
 class Permissions(DB.Model):
 	id = DB.Column(DB.Integer, primary_key=True, autoincrement=True);
-	schedule_orders = DB.relationship(DB.Integer(20));
+	schedule_orders = DB.Column(DB.Integer(20));
 	manage_user = DB.Column(DB.Integer(20));
 	manage_role	= DB.Column(DB.Integer(20));
 	manage_orders = DB.Column(DB.Integer(20));
