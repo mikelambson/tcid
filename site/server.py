@@ -12,7 +12,7 @@ from sqlalchemy import create_engine;#Engine handler
 #import environment, recorder;#Import custom libraries
 FlaskServer = Flask(__name__);#Dynamic web server
 Interactive = SocketIO(FlaskServer);#Socket handler
-FlaskServer.config.from_object(os.getenv("SERVER_ENV") if os.getenv("SERVER_ENV") else "environment.Testing");
+#FlaskServer.config.from_object(os.getenv("SERVER_ENV") if os.getenv("SERVER_ENV") else "environment.Testing");
 Mailer = Mail(FlaskServer);#Mail handler
 DB = SQLAlchemy(FlaskServer);#Sqlalchemy database handler
 import models;
