@@ -9,7 +9,7 @@ class Role_permissions(DB.Model):
 	permission_id = DB.relationship(DB.Integer, DB.ForeignKey('permissions.id'));
 	created_by = DB.relationship(DB.Integer, DB.ForeignKey('users.id'));
 	created_at = DB.Column(DB.DateTime);
-	updated_by = DB.relationship(DB.Integer, DB.ForeignKey('users.id'), nullable=True);
+	updated_by = DB.relationship(DB.Integer, DB.ForeignKey('users.id'));
 	updated_at = DB.Column(DB.DateTime, nullable=True);
 
 	def __init__(self, name, created_at, updated_at):
