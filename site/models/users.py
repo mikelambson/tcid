@@ -6,7 +6,7 @@ from server import DB, FlaskServer;
 class Users(DB.Model):
 	id = DB.Column(DB.Integer, primary_key=True, autoincrement=True);
 	login = DB.Column(DB.String(40), unique=True);
-	password = DB.Column(DB.String(400);
+	password = DB.Column(DB.String(400));
 	protected = DB.Column(DB.Boolean);
 	created_at = DB.Column(DB.DateTime);
 	updated_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'));
