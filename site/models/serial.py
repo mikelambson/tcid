@@ -11,7 +11,7 @@ class Serial(DB.Model):
 	serial_laterals_id = DB.relationship(DB.Integer, DB.ForeignKey('serial_laterals.id'), lazy='joined');
 	created_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'));
 	created_at = DB.Column(DB.DateTime);
-	updated_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'), nullable=True);
+	updated_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'));
 	updated_at = DB.Column(DB.DateTime, nullable=True);
 
 	def __init__(self, number, created_at, updated_at):
