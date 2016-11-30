@@ -5,7 +5,7 @@ from server import DB, FlaskServer;
 
 class Irrigators(DB.Model):
 	id = DB.Column(DB.Integer, primary_key=True, autoincrement=True);
-	name = DB.Column(DB.Varchar(40));
+	name = DB.Column(DB.String(40));
 	notation = DB.Column(DB.Text);
 	created_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'));
 	created_at = DB.Column(DB.DateTime);
