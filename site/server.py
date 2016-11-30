@@ -20,7 +20,7 @@ engine = create_engine('mysql://tcid:tcid@localhost/tcid?charset=utf8mb4_unicode
                        
 @FlaskServer.route('/')
 def hello_world():
-    return 'Hello, World!';
+	return render_template('index.html');
 
 if __name__ == "__main__":
     FlaskServer.run(host="0.0.0.0", port=int("3000"), debug=True);
