@@ -13,8 +13,8 @@ class Orders(DB.Model):
 	district_id = DB.relationship(DB.Integer, DB.ForeignKey('district.id'));
 	order_time = DB.Column(DB.DateTime);
 	balance = DB.Column(DB.Float);
-	adjust = DB.Column(DB.varchar(20), nullable=True);
-	pending_analysis = DB.Column(DB.Tinyint(1));
+	adjust = DB.Column(DB.String(20), nullable=True);
+	pending_analysis = DB.Column(DB.Boolean);
 	created_by = DB.relationship(DB.Integer, DB.ForeignKey('users.id'));
 	created_at = DB.Column(DB.DateTime);
 	updated_by = DB.relationship(DB.Integer, DB.ForeignKey('users.id'), nullable=True);
