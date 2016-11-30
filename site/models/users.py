@@ -16,7 +16,6 @@ class Users(DB.Model):
 	def validate_subject(self, key, subject):
 		return validate_word(subject, 2, 320, valid=re.compile('[a-zA-Z\s]+'))
 """
-
 	def __init__(self, login, password, protected, created_at, updated_at):
 		self.login = login;
 		self.password = password;
