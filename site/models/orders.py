@@ -6,7 +6,7 @@ from server import DB, FlaskServer;
 class Orders(DB.Model):
 	id = DB.Column(DB.Integer, primary_key=True, autoincrement=True);
 	order_no = DB.Column(DB.Integer);
-	serial_id = DB.relationship(DB.Integer. DB.ForeignKey('serial.id'), lazy='joined');
+	serial_id = DB.relationship(DB.Integer, DB.ForeignKey('serial.id'), lazy='joined');
 	approx_cfs = DB.Column(DB.Float);
 	approx_hrs = DB.Column(DB.Float);
 	approx_af = DB.Column(DB.Float);
