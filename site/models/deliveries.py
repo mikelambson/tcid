@@ -4,8 +4,8 @@ from server import DB, FlaskServer;
 
 class Deliveries(DB.Model):
 	id = DB.Column(DB.Integer, primary_key=True, autoincrement=True);
-	order_id = DB.relationship(DB.Integer, foreign_keys='order.id', lazy='dynamic'); #set lazy=dynamic to only load what is called for.  (q: is this the correct way to do it?)
-	child_id = DB.Column(DB.Integer(20));
+	order_id = DB.relationship(DB.Integer, foreign_keys='order.id', lazy='dynamic'); #set lazy=dynamic to only load what is called for.
+  child_id = DB.Column(DB.Integer);
 	scheduled = DB.Column(DB.DateTime);
 	start_time = DB.Column(DB.DateTime);
 	start_user_id = DB.relationship(DB.Integer, foreign_keys='user.id');
