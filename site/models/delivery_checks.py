@@ -10,7 +10,7 @@ class DeliveryChecks(DB.Model):
 	msrmnt_time = DB.Column(DB.DateTime);
 	created_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'));
 	created_at = DB.Column(DB.DateTime);
-	updated_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'), nullable=True);
+	updated_by = DB.Column(DB.Integer, DB.ForeignKey('users.id'));
 	updated_at = DB.Column(DB.DateTime, nullable=True);
 
 	def __init__(self, msrmnt, msrmnt_time, created_at, updated_at):
