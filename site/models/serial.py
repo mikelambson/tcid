@@ -5,7 +5,7 @@ from server import DB, FlaskServer;
 
 class Serial(DB.Model):
 	id = DB.Column(DB.Integer, primary_key=True, autoincrement=True);
-	number = DB.Column(DB.Varchar(20));
+	number = DB.Column(DB.String(20));
 	serial_owners_id = DB.relationship(DB.Integer, DB.ForeignKey('serial_owners.id'), lazy='joined');
 	serial_irrigators_id = DB.relationship(DB.Integer, DB.ForeignKey('serial_irrigators.id'), lazy='joined');
 	serial_laterals_id = DB.relationship(DB.Integer, DB.ForeignKey('serial_laterals.id'), lazy='joined');
