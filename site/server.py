@@ -20,7 +20,7 @@ engine = create_engine('mysql://tcid:tcid@localhost/tcid?charset=utf8mb4_unicode
                        
 @FlaskServer.route('/')
 def index():
-	return render_template('base.html');
+	return render_template('index.html');
 
 @FlaskServer.route('/assets/<path:resource>')
 def serveStaticResource(resource):# Serves misc. resources: css, js.
