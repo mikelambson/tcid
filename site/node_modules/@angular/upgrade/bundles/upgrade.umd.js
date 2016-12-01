@@ -1,5 +1,5 @@
 /**
- * @license Angular v2.2.3
+ * @license Angular v2.2.4
  * (c) 2010-2016 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -267,7 +267,13 @@
 
     function onError(e) {
         // TODO: (misko): We seem to not have a stack trace here!
-        console.log(e, e.stack);
+        if (console.error) {
+            console.error(e, e.stack);
+        }
+        else {
+            // tslint:disable-next-line:no-console
+            console.log(e, e.stack);
+        }
         throw e;
     }
     function controllerKey(name) {

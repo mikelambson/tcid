@@ -1,5 +1,5 @@
 /**
- * @license Angular v2.2.3
+ * @license Angular v2.2.4
  * (c) 2010-2016 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -513,6 +513,7 @@
         };
         BrowserDomAdapter.prototype.log = function (error) {
             if (window.console) {
+                // tslint:disable-next-line:no-console
                 window.console.log && window.console.log(error);
             }
         };
@@ -2468,6 +2469,7 @@
         function AngularProfiler(ref) {
             this.appRef = ref.injector.get(_angular_core.ApplicationRef);
         }
+        // tslint:disable:no-console
         /**
          * Exercises change detection in a loop and then prints the average amount of
          * time in milliseconds how long a single round of change detection takes for

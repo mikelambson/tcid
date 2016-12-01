@@ -1,5 +1,5 @@
 /**
- * @license Angular v2.2.3
+ * @license Angular v2.2.4
  * (c) 2010-2016 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -75,6 +75,7 @@
         return o !== null && (typeof o === 'function' || typeof o === 'object');
     }
     function print(obj) {
+        // tslint:disable-next-line:no-console
         console.log(obj);
     }
     function warn(obj) {

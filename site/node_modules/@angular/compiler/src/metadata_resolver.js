@@ -156,7 +156,7 @@ export var CompileMetadataResolver = (function () {
             return normalizedDirMeta;
         };
         if (nonNormalizedMetadata.isComponent) {
-            var templateMeta = this._directiveNormalizer.normalizeTemplate({
+            var templateMeta_1 = this._directiveNormalizer.normalizeTemplate({
                 componentType: directiveType,
                 moduleUrl: nonNormalizedMetadata.type.moduleUrl,
                 encapsulation: nonNormalizedMetadata.template.encapsulation,
@@ -167,15 +167,15 @@ export var CompileMetadataResolver = (function () {
                 animations: nonNormalizedMetadata.template.animations,
                 interpolation: nonNormalizedMetadata.template.interpolation
             });
-            if (templateMeta.syncResult) {
-                createDirectiveMetadata(templateMeta.syncResult);
+            if (templateMeta_1.syncResult) {
+                createDirectiveMetadata(templateMeta_1.syncResult);
                 return null;
             }
             else {
                 if (isSync) {
                     throw new ComponentStillLoadingError(directiveType);
                 }
-                return templateMeta.asyncResult.then(createDirectiveMetadata);
+                return function () { return templateMeta_1.asyncResult.then(createDirectiveMetadata); };
             }
         }
         else {
@@ -397,7 +397,10 @@ export var CompileMetadataResolver = (function () {
                     transitiveModule.directives.push(declaredIdentifier);
                     declaredDirectives.push(declaredIdentifier);
                     _this._addTypeToModule(declaredType, moduleType);
-                    transitiveModule.directiveLoaders.push(function () { return _this._loadDirectiveMetadata(declaredType, isSync); });
+                    var loader = _this._loadDirectiveMetadata(declaredType, isSync);
+                    if (loader) {
+                        transitiveModule.directiveLoaders.push(loader);
+                    }
                 }
                 else if (_this._pipeResolver.isPipe(declaredType)) {
                     transitiveModule.pipesSet.add(declaredType);
