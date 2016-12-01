@@ -11,7 +11,7 @@ myApp.config(['$routeProvider',
                  templateUrl: '/templates/partials/index.html',
              }).
              when('/about', {
-                 templateUrl: '../templates/partials/about.html',
+                 templateUrl: '/templates/partials/about.html',
              }).
              otherwise({
                  redirectTo: '/'
