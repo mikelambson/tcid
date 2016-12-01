@@ -18,6 +18,10 @@ DB = SQLAlchemy(FlaskServer);#Sqlalchemy database handler
 import models;
 engine = create_engine('mysql://tcid:tcid@localhost/tcid?charset=utf8mb4_unicode_520_ci')
                        
+@FlaskServer.route('/assets/<path:resource>')
+def serveStaticResource(resource):# Serves misc. resources: css, js.
+return send_from_directory('assets/', resource); 
+
 @FlaskServer.route('/')
 def index():
 	return render_template('base.html');
