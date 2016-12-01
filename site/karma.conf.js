@@ -28,29 +28,29 @@ module.exports = function(config) {
     },
     files: [
       // System.js for module loading
-      'node_modules/systemjs/dist/system.src.js',
+      'assets/lib/systemjs/dist/system.src.js',
 
       // Polyfills
-      'node_modules/core-js/client/shim.js',
-      'node_modules/reflect-metadata/Reflect.js',
+      'assets/lib/core-js/client/shim.js',
+      'assets/lib/reflect-metadata/Reflect.js',
 
       // zone.js
-      'node_modules/zone.js/dist/zone.js',
-      'node_modules/zone.js/dist/long-stack-trace-zone.js',
-      'node_modules/zone.js/dist/proxy.js',
-      'node_modules/zone.js/dist/sync-test.js',
-      'node_modules/zone.js/dist/jasmine-patch.js',
-      'node_modules/zone.js/dist/async-test.js',
-      'node_modules/zone.js/dist/fake-async-test.js',
+      'assets/lib/zone.js/dist/zone.js',
+      'assets/lib/zone.js/dist/long-stack-trace-zone.js',
+      'assets/lib/zone.js/dist/proxy.js',
+      'assets/lib/zone.js/dist/sync-test.js',
+      'assets/lib/zone.js/dist/jasmine-patch.js',
+      'assets/lib/zone.js/dist/async-test.js',
+      'assets/lib/zone.js/dist/fake-async-test.js',
 
       // RxJs
-      { pattern: 'node_modules/rxjs/**/*.js', included: false, watched: false },
-      { pattern: 'node_modules/rxjs/**/*.js.map', included: false, watched: false },
+      { pattern: 'assets/lib/rxjs/**/*.js', included: false, watched: false },
+      { pattern: 'assets/lib/rxjs/**/*.js.map', included: false, watched: false },
 
       // Paths loaded via module imports:
       // Angular itself
-      { pattern: 'node_modules/@angular/**/*.js', included: false, watched: false },
-      { pattern: 'node_modules/@angular/**/*.js.map', included: false, watched: false },
+      { pattern: 'assets/lib/@angular/**/*.js', included: false, watched: false },
+      { pattern: 'assets/lib/@angular/**/*.js.map', included: false, watched: false },
 
       { pattern: 'systemjs.config.js', included: false, watched: false },
       { pattern: 'systemjs.config.extras.js', included: false, watched: false },

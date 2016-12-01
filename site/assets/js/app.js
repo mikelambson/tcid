@@ -1,6 +1,6 @@
 'use strict';   // See note about 'use strict'; below
 
-var myApp = angular.module('myApp', [
+var myApp = angular.module('app', [
  'ngRoute',
 ]);
 
@@ -11,7 +11,7 @@ myApp.config(['$routeProvider',
                  templateUrl: '/templates/partials/index.html',
              }).
              when('/about', {
-                 templateUrl: '/templates/partials/about.html',
+                 templateUrl: '../templates/partials/about.html',
              }).
              otherwise({
                  redirectTo: '/'
