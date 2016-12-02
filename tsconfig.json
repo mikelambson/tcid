@@ -7,8 +7,13 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "lib": [ "es2015", "dom" ],
+     "removeComments": false,
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true
     
-  }
+  },
+ "exclude": [
+   "node_modules", 
+   "site/assets/lib"
+ ]
 }
