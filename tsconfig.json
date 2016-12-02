@@ -8,9 +8,9 @@
     "experimentalDecorators": true,
     "lib": [ "es2015", "dom" ],
     "noImplicitAny": true,
-    "exclude": [
-    "site/assets/lib"],
     "suppressImplicitAnyIndexErrors": true
     
   }
+  "exclude": [
+    "site/assets/lib"],
 }
