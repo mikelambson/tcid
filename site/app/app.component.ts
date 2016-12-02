@@ -5,15 +5,9 @@ import { HttpModule } from '@angular/http';
 
 @Component({
   selector: 'my-app',
-  template: `<h1>{{title}}</h1><hr />
-    <div class="jumbotron">
-      <h1>It works!</h1>
-    </div>
-  `,
-  styles: [`
-    .jumbotron { box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2); }
-  `]
+  template: '<h1>{{title}}</h1><h2>{{hero}} details!</h2>'
 })
 export class AppComponent {
-  title = 'TCID Scheduling System';
+  title = 'Truckee-Carson Irrigation District';
+  hero = 'Scheduling System';
 }
