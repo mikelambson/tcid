@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 
 @Component({
   selector: 'my-app',
-  template: `
+  template: `<h1>{{title}}</h1><hr />
     <div class="jumbotron">
       <h1>It works!</h1>
     </div>
