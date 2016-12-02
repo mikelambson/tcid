@@ -1,6 +1,7 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Component } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
 @Component({
   selector: 'my-app',
