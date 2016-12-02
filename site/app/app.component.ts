@@ -14,4 +14,6 @@ import { HttpModule } from '@angular/http';
     .jumbotron { box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2); }
   `]
 })
-export class AppComponent {}
+export class AppComponent {
+  title = 'TCID Scheduling System';
+}
