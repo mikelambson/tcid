@@ -7,7 +7,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "lib": [ "es2015", "dom" ],
-     "removeComments": false,
+    "removeComments": false,
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true
     
