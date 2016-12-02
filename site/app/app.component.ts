@@ -1,13 +1,19 @@
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { Component } from '@angular/core';
-import { HttpModule } from '@angular/http';
 
 @Component({
-  selector: 'my-app',
-  template: '<h1>{{title}}</h1><h2>{{subtitle}}</h2><hr />'
+  moduleId: module.id, export class AppComponent {
+  selector: 'my-app', title = 'Tour of Heroes ~ Done by Mike';
+  template: `}
+    <h1>{{title}}</h1>
+    <nav>
+      <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+    </nav>
+    <router-outlet></router-outlet>
+  `,
+  styleUrls: ['app.component.css'],
 })
+
 export class AppComponent {
-  title = 'Truckee-Carson Irrigation District';
-  subtitle = 'Scheduling System';
+  title = 'Tour of Heroes ~ Mike did it!';
 }
