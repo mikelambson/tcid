@@ -8,19 +8,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
+var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
     }
+    AppComponent = __decorate([
+        core_1.Component({
+            selector: 'my-app',
+            template: "\n    <div class=\"jumbotron\">\n      <h1>It works!</h1>\n    </div>\n  ",
+            styles: ["\n    .jumbotron { box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2); }\n  "]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], AppComponent);
     return AppComponent;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        selector: 'my-app',
-        template: "\n    <div class=\"jumbotron\">\n      <h1>Welcome to Our App!</h1>\n    </div>\n  ",
-        styles: ["\n    .jumbotron { box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2); }\n  "]
-    }),
-    __metadata("design:paramtypes", [])
-], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map
