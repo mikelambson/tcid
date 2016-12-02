@@ -11,6 +11,4 @@
     "suppressImplicitAnyIndexErrors": true
     
   }
-  "exclude": [
-    "site/assets/lib"],
 }
