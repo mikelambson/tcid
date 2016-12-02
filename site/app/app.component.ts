@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 import { HttpModule } from '@angular/http';
 
 @Component({
-  selector: 'page-top',
+  selector: 'my-app',
   template: '<h1>{{title}}</h1><h2>{{subtitle}}</h2><hr />'
 })
 export class AppComponent {
