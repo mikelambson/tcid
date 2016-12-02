@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
     <div class="jumbotron">
-      <h1>Welcome to Our App!</h1>
+      <h1>It works!</h1>
     </div>
   `,
   styles: [`
