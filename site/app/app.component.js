@@ -12,14 +12,14 @@ var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Truckee-Carson Irrigation District';
-        this.hero = 'Scheduling System';
+        this.subtitle = 'Scheduling System';
     }
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: '<h1>{{title}}</h1><h2>{{hero}} details!</h2>'
+        template: '<h1>{{title}}</h1><h2>{{subtitle}}</h2><hr />'
     }),
     __metadata("design:paramtypes", [])
 ], AppComponent);
