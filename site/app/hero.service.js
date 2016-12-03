@@ -19,7 +19,7 @@ var HeroService = (function () {
     HeroService.prototype.getHeroesSlowly = function () {
         var _this = this;
         return new Promise(function (resolve) {
-            return setTimeout(resolve, 2000);
+            return setTimeout(resolve, 20);
         }) // delay 2 seconds
             .then(function () { return _this.getHeroes(); });
     };
