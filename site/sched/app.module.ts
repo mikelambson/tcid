@@ -2,12 +2,13 @@ import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 
-import { HeaderComponent}   from './header.component';
-import { MainComponent } from './main.component';
-import { FooterComponent }     from './footer.component';
-import { DataService }         from './data.service';
+import { RootComponent }         from './root.component';
+import { HeaderComponent}        from './header.component';
+//import { MainComponent }       from './main.component';
+//import { FooterComponent }     from './footer.component';
+//import { DataService }         from './data.service';
 
-import { AppRoutingModule }    from './app-routing.module';
+//import { AppRoutingModule }    from './app-routing.module';
 
 @NgModule({
   imports: [
@@ -16,12 +17,12 @@ import { AppRoutingModule }    from './app-routing.module';
     AppRoutingModule
   ],
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    MainComponent,
-    FooterComponent
+    RootComponent,
+    HeaderComponent//,
+    //MainComponent,
+    //FooterComponent
   ],
-  providers: [ DataService ],
+  //providers: [ DataService ],
   bootstrap: [ AppComponent ]
 })
 
