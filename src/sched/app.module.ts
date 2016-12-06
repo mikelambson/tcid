@@ -2,11 +2,14 @@ import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 
-import { RootComponent }         from './root.component';
-import { HeaderComponent}        from './header.component';
-//import { MainComponent }       from './main.component';
-//import { FooterComponent }     from './footer.component';
-//import { DataService }         from './data.service';
+import { RootComponent }          from './root.component';
+import { HomeComponent }          from './home.component';
+import { LoginComponent }         from './login.component';
+
+//import { HeaderComponent}         from './header.component';
+//import { MainComponent }          from './main.component';
+//import { FooterComponent }        from './footer.component';
+//import { DataService }            from './data.service';
 
 //import { AppRoutingModule }    from './app-routing.module';
 
@@ -18,7 +21,9 @@ import { HeaderComponent}        from './header.component';
   ],
   declarations: [
     RootComponent,
-    HeaderComponent//,
+    HomeComponent,
+    LoginComponent,
+    //HeaderComponent,
     //MainComponent,
     //FooterComponent
   ],
