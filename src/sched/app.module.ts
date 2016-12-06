@@ -28,8 +28,9 @@ import { LoginComponent }         from './login.component';
     //FooterComponent
   ],
   //providers: [ DataService ],
-  bootstrap: [ AppComponent ]
-})
+  bootstrap: [ AppComponent,
+             ROUTER_PROVIDERS
+]})
 
 export class AppModule { }
 
