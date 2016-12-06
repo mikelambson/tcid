@@ -1,14 +1,21 @@
 {
   "_args": [
     [
-      "zone.js@^0.6.26",
-      "/home/exavior75/Documents/Sites/tcid"
+      {
+        "raw": "zone.js@^0.6.26",
+        "scope": null,
+        "escapedName": "zone.js",
+        "name": "zone.js",
+        "rawSpec": "^0.6.26",
+        "spec": ">=0.6.26 <0.7.0",
+        "type": "range"
+      },
+      "/home/mike/tcid"
     ]
   ],
   "_from": "zone.js@>=0.6.26 <0.7.0",
   "_id": "zone.js@0.6.26",
   "_inCache": true,
-  "_installable": true,
   "_location": "/zone.js",
   "_nodeVersion": "6.8.1",
   "_npmOperationalInternal": {
@@ -16,16 +23,17 @@
     "tmp": "tmp/zone.js-0.6.26.tgz_1476823791628_0.07981128408573568"
   },
   "_npmUser": {
-    "email": "angular-core+npm@google.com",
-    "name": "angularcore"
+    "name": "angularcore",
+    "email": "angular-core+npm@google.com"
   },
   "_npmVersion": "3.10.8",
   "_phantomChildren": {},
   "_requested": {
-    "name": "zone.js",
     "raw": "zone.js@^0.6.26",
-    "rawSpec": "^0.6.26",
     "scope": null,
+    "escapedName": "zone.js",
+    "name": "zone.js",
+    "rawSpec": "^0.6.26",
     "spec": ">=0.6.26 <0.7.0",
     "type": "range"
   },
@@ -36,7 +44,7 @@
   "_shasum": "067c13b8b80223a89b62e9dc82680f09762c4636",
   "_shrinkwrap": null,
   "_spec": "zone.js@^0.6.26",
-  "_where": "/home/exavior75/Documents/Sites/tcid",
+  "_where": "/home/mike/tcid",
   "author": {
     "name": "Brian Ford"
   },
@@ -86,8 +94,8 @@
     "tarball": "https://registry.npmjs.org/zone.js/-/zone.js-0.6.26.tgz"
   },
   "files": [
-    "dist",
-    "lib"
+    "lib",
+    "dist"
   ],
   "gitHead": "21935e8edf65a4192268ebd1940575ceaa08c244",
   "homepage": "https://github.com/angular/zone.js#readme",

@@ -1,14 +1,21 @@
 {
   "_args": [
     [
-      "@angular/platform-browser@^2.2.4",
-      "/home/exavior75/Documents/Sites/tcid"
+      {
+        "raw": "@angular/platform-browser@^2.2.4",
+        "scope": "@angular",
+        "escapedName": "@angular%2fplatform-browser",
+        "name": "@angular/platform-browser",
+        "rawSpec": "^2.2.4",
+        "spec": ">=2.2.4 <3.0.0",
+        "type": "range"
+      },
+      "/home/mike/tcid"
     ]
   ],
   "_from": "@angular/platform-browser@>=2.2.4 <3.0.0",
   "_id": "@angular/platform-browser@2.2.4",
   "_inCache": true,
-  "_installable": true,
   "_location": "/@angular/platform-browser",
   "_nodeVersion": "6.2.0",
   "_npmOperationalInternal": {
@@ -16,16 +23,17 @@
     "tmp": "tmp/platform-browser-2.2.4.tgz_1480548316380_0.2728964926209301"
   },
   "_npmUser": {
-    "email": "angular-core+npm@google.com",
-    "name": "angular"
+    "name": "angular",
+    "email": "angular-core+npm@google.com"
   },
   "_npmVersion": "3.8.9",
   "_phantomChildren": {},
   "_requested": {
-    "name": "@angular/platform-browser",
     "raw": "@angular/platform-browser@^2.2.4",
-    "rawSpec": "^2.2.4",
     "scope": "@angular",
+    "escapedName": "@angular%2fplatform-browser",
+    "name": "@angular/platform-browser",
+    "rawSpec": "^2.2.4",
     "spec": ">=2.2.4 <3.0.0",
     "type": "range"
   },
@@ -36,7 +44,7 @@
   "_shasum": "6041e02c7ed62622c926060869506705f79fb5fb",
   "_shrinkwrap": null,
   "_spec": "@angular/platform-browser@^2.2.4",
-  "_where": "/home/exavior75/Documents/Sites/tcid",
+  "_where": "/home/mike/tcid",
   "author": {
     "name": "angular"
   },
@@ -64,8 +72,8 @@
   "name": "@angular/platform-browser",
   "optionalDependencies": {},
   "peerDependencies": {
-    "@angular/common": "2.2.4",
-    "@angular/core": "2.2.4"
+    "@angular/core": "2.2.4",
+    "@angular/common": "2.2.4"
   },
   "readme": "ERROR: No README data found!",
   "repository": {

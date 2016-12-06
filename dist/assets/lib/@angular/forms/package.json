@@ -1,14 +1,21 @@
 {
   "_args": [
     [
-      "@angular/forms@^2.2.4",
-      "/home/exavior75/Documents/Sites/tcid"
+      {
+        "raw": "@angular/forms@^2.2.4",
+        "scope": "@angular",
+        "escapedName": "@angular%2fforms",
+        "name": "@angular/forms",
+        "rawSpec": "^2.2.4",
+        "spec": ">=2.2.4 <3.0.0",
+        "type": "range"
+      },
+      "/home/mike/tcid"
     ]
   ],
   "_from": "@angular/forms@>=2.2.4 <3.0.0",
   "_id": "@angular/forms@2.2.4",
   "_inCache": true,
-  "_installable": true,
   "_location": "/@angular/forms",
   "_nodeVersion": "6.2.0",
   "_npmOperationalInternal": {
@@ -16,16 +23,17 @@
     "tmp": "tmp/forms-2.2.4.tgz_1480548308023_0.5244711386039853"
   },
   "_npmUser": {
-    "email": "angular-core+npm@google.com",
-    "name": "angular"
+    "name": "angular",
+    "email": "angular-core+npm@google.com"
   },
   "_npmVersion": "3.8.9",
   "_phantomChildren": {},
   "_requested": {
-    "name": "@angular/forms",
     "raw": "@angular/forms@^2.2.4",
-    "rawSpec": "^2.2.4",
     "scope": "@angular",
+    "escapedName": "@angular%2fforms",
+    "name": "@angular/forms",
+    "rawSpec": "^2.2.4",
     "spec": ">=2.2.4 <3.0.0",
     "type": "range"
   },
@@ -36,7 +44,7 @@
   "_shasum": "95f15ca1938879298ccc0ef8a3e9ef5e750e31ef",
   "_shrinkwrap": null,
   "_spec": "@angular/forms@^2.2.4",
-  "_where": "/home/exavior75/Documents/Sites/tcid",
+  "_where": "/home/mike/tcid",
   "author": {
     "name": "angular"
   },
@@ -64,8 +72,8 @@
   "name": "@angular/forms",
   "optionalDependencies": {},
   "peerDependencies": {
-    "@angular/common": "2.2.4",
-    "@angular/core": "2.2.4"
+    "@angular/core": "2.2.4",
+    "@angular/common": "2.2.4"
   },
   "readme": "ERROR: No README data found!",
   "repository": {

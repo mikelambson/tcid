@@ -1,14 +1,21 @@
 {
   "_args": [
     [
-      "@angular/http@^2.2.4",
-      "/home/exavior75/Documents/Sites/tcid"
+      {
+        "raw": "@angular/http@^2.2.4",
+        "scope": "@angular",
+        "escapedName": "@angular%2fhttp",
+        "name": "@angular/http",
+        "rawSpec": "^2.2.4",
+        "spec": ">=2.2.4 <3.0.0",
+        "type": "range"
+      },
+      "/home/mike/tcid"
     ]
   ],
   "_from": "@angular/http@>=2.2.4 <3.0.0",
   "_id": "@angular/http@2.2.4",
   "_inCache": true,
-  "_installable": true,
   "_location": "/@angular/http",
   "_nodeVersion": "6.2.0",
   "_npmOperationalInternal": {
@@ -16,16 +23,17 @@
     "tmp": "tmp/http-2.2.4.tgz_1480548312981_0.927597489906475"
   },
   "_npmUser": {
-    "email": "angular-core+npm@google.com",
-    "name": "angular"
+    "name": "angular",
+    "email": "angular-core+npm@google.com"
   },
   "_npmVersion": "3.8.9",
   "_phantomChildren": {},
   "_requested": {
-    "name": "@angular/http",
     "raw": "@angular/http@^2.2.4",
-    "rawSpec": "^2.2.4",
     "scope": "@angular",
+    "escapedName": "@angular%2fhttp",
+    "name": "@angular/http",
+    "rawSpec": "^2.2.4",
     "spec": ">=2.2.4 <3.0.0",
     "type": "range"
   },
@@ -36,7 +44,7 @@
   "_shasum": "ccfeb3f805e0628f6bb9efa129ef432d79548c63",
   "_shrinkwrap": null,
   "_spec": "@angular/http@^2.2.4",
-  "_where": "/home/exavior75/Documents/Sites/tcid",
+  "_where": "/home/mike/tcid",
   "author": {
     "name": "angular"
   },
@@ -64,9 +72,9 @@
   "name": "@angular/http",
   "optionalDependencies": {},
   "peerDependencies": {
+    "rxjs": "5.0.0-beta.12",
     "@angular/core": "2.2.4",
-    "@angular/platform-browser": "2.2.4",
-    "rxjs": "5.0.0-beta.12"
+    "@angular/platform-browser": "2.2.4"
   },
   "readme": "ERROR: No README data found!",
   "repository": {

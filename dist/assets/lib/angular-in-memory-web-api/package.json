@@ -1,14 +1,21 @@
 {
   "_args": [
     [
-      "angular-in-memory-web-api@~0.1.15",
-      "/home/exavior75/Documents/Sites/tcid"
+      {
+        "raw": "angular-in-memory-web-api@~0.1.15",
+        "scope": null,
+        "escapedName": "angular-in-memory-web-api",
+        "name": "angular-in-memory-web-api",
+        "rawSpec": "~0.1.15",
+        "spec": ">=0.1.15 <0.2.0",
+        "type": "range"
+      },
+      "/home/mike/tcid"
     ]
   ],
   "_from": "angular-in-memory-web-api@>=0.1.15 <0.2.0",
   "_id": "angular-in-memory-web-api@0.1.16",
   "_inCache": true,
-  "_installable": true,
   "_location": "/angular-in-memory-web-api",
   "_nodeVersion": "5.11.1",
   "_npmOperationalInternal": {
@@ -16,16 +23,17 @@
     "tmp": "tmp/angular-in-memory-web-api-0.1.16.tgz_1479689931654_0.11987282591871917"
   },
   "_npmUser": {
-    "email": "wardbell@hotmail.com",
-    "name": "wardbell"
+    "name": "wardbell",
+    "email": "wardbell@hotmail.com"
   },
   "_npmVersion": "3.8.6",
   "_phantomChildren": {},
   "_requested": {
-    "name": "angular-in-memory-web-api",
     "raw": "angular-in-memory-web-api@~0.1.15",
-    "rawSpec": "~0.1.15",
     "scope": null,
+    "escapedName": "angular-in-memory-web-api",
+    "name": "angular-in-memory-web-api",
+    "rawSpec": "~0.1.15",
     "spec": ">=0.1.15 <0.2.0",
     "type": "range"
   },
@@ -36,7 +44,7 @@
   "_shasum": "77067820f7f01946a6ab497ca0ea4992276b61b1",
   "_shrinkwrap": null,
   "_spec": "angular-in-memory-web-api@~0.1.15",
-  "_where": "/home/exavior75/Documents/Sites/tcid",
+  "_where": "/home/mike/tcid",
   "author": "",
   "bugs": {
     "url": "https://github.com/angular/in-memory-web-api/issues"
