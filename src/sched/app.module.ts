@@ -6,6 +6,7 @@ import { FormsModule }    from '@angular/forms';
 import { RootComponent }          from './root.component';
 import { HomeComponent }          from './home.component';
 import { LoginComponent }         from './login.component';
+import { ScheduleComponent }      from './schedule.component';
 
 //import { HeaderComponent}         from './header.component';
 //import { MainComponent }          from './main.component';
@@ -24,6 +25,7 @@ import { LoginComponent }         from './login.component';
     RootComponent,
     HomeComponent,
     LoginComponent,
+    ScheduleComponent
     //HeaderComponent,
     //MainComponent,
     //FooterComponent
