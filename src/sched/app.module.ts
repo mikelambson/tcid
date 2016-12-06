@@ -13,7 +13,7 @@ import { ScheduleComponent }      from './schedule.component';
 //import { FooterComponent }        from './footer.component';
 //import { DataService }            from './data.service';
 
-//import { AppRoutingModule }    from './app-routing.module';
+import { AppRoutingModule }    from './app-routing.module';
 
 @NgModule({
   imports: [
