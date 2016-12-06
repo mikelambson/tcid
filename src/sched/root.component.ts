@@ -13,8 +13,20 @@ import {Schedule} from './shedule/schedule.component.ts';
     <div class="app">
       Hello world! 
       <p>Root Component Here</p>
+      <nav>
+        <ul>
+          <li>
+            <a [routerLink]=" ['Home'] ">Home</a>
+          </li>
+          <li>
+            <a [routerLink]=" ['Login'] ">Login</a>
+          </li>
+          <li>
+            <a [routerLink=" ['Schedule'] ">Schedule</a>
+        </ul>
+      </nav>
       <main>
-        <!-- stuff -->
+        <router-outlet></router-outlet>
       </main>
     </div>
   `
