@@ -9,7 +9,7 @@ module.exports = function (gulp, plugins) {
         var tsResult = gulp.src([
             'node_modules/@types/core-js/index.d.ts',
             'node_modules/@types/node/index.d.ts',
-            'src/assets/**/*.ts'
+            'src/assets/components/**/*.ts'
         ]).pipe(ts(tsProject));
 
         return tsResult.js
