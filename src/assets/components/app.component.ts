@@ -1,6 +1,6 @@
 // app.component.ts
-import {Component} from 'angular/core';
-import {RouteConfig} from 'angular/router';
+import {Component} from '@angular/core';
+import {RouteConfig} from '@angular/router';
 
 import {Home} from './home.component';
 import {Login} from './login.component';
