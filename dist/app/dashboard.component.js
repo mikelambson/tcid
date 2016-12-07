@@ -26,8 +26,8 @@ DashboardComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'my-dashboard',
-        templateUrl: 'templates/partials/dashboard.component.html',
-        styleUrls: ['assets/css/dashboard.component.css']
+        templateUrl: '/templates/partials/dashboard.component.html',
+        styleUrls: ['/assets/css/dashboard.component.css']
     }),
     __metadata("design:paramtypes", [hero_service_1.HeroService])
 ], DashboardComponent);
