@@ -13,6 +13,6 @@ module.exports = function (gulp, plugins) {
         ]).pipe(ts(tsProject));
 
         return tsResult.js
-            .pipe(gulp.dest('dist/assets'));
+            .pipe(gulp.dest('dist/app'));
     }
 };
