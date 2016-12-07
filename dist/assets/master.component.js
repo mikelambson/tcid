@@ -8,18 +8,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-/schedule/schedule.component.ts;
-var core_1 = require("angular/core");
-var Schedule = (function () {
-    function Schedule() {
+var core_1 = require("@angular/core");
+var MasterComponent = (function () {
+    function MasterComponent() {
+        this.name = 'World';
     }
-    return Schedule;
+    return MasterComponent;
 }());
-Schedule = __decorate([
+MasterComponent = __decorate([
     core_1.Component({
-        selector: 'schedule',
-        template: "\n    <h1>Schedule view!</h1>\n  "
+        selector: 'my-app',
+        template: "<h1>Hello {{name}}!</h1>",
     }),
     __metadata("design:paramtypes", [])
-], Schedule);
-exports.Schedule = Schedule;
+], MasterComponent);
+exports.MasterComponent = MasterComponent;

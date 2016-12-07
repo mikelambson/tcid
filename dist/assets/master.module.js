@@ -8,17 +8,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("angular/core");
-var Home = (function () {
-    function Home() {
+var core_1 = require("@angular/core");
+var platform_browser_1 = require("@angular/platform-browser");
+var master_component_1 = require("./master.component");
+var MasterModule = (function () {
+    function MasterModule() {
     }
-    return Home;
+    return MasterModule;
 }());
-Home = __decorate([
-    core_1.Component({
-        selector: 'home',
-        template: "\n    <h1>Home view!</h1>\n  "
+MasterModule = __decorate([
+    core_1.NgModule({
+        imports: [platform_browser_1.BrowserModule],
+        declarations: [master_component_1.MasterComponent],
+        bootstrap: [master_component_1.MasterComponent]
     }),
     __metadata("design:paramtypes", [])
-], Home);
-exports.Home = Home;
+], MasterModule);
+exports.MasterModule = MasterModule;
