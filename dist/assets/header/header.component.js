@@ -9,20 +9,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var master_component_1 = require("./master.component");
-var header_component_1 = require("./header/header.component;");
-var MasterModule = (function () {
-    function MasterModule() {
+var HeaderComponent = (function () {
+    function HeaderComponent() {
     }
-    return MasterModule;
+    return HeaderComponent;
 }());
-MasterModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        declarations: [master_component_1.MasterComponent, header_component_1.HeaderComponent],
-        bootstrap: [master_component_1.MasterComponent],
+HeaderComponent = __decorate([
+    core_1.Component({
+        selector: 'header',
+        template: '<h1>Header Area - for reals!</h1>',
     }),
     __metadata("design:paramtypes", [])
-], MasterModule);
-exports.MasterModule = MasterModule;
+], HeaderComponent);
+exports.HeaderComponent = HeaderComponent;
