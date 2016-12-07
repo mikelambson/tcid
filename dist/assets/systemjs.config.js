@@ -5,7 +5,7 @@
 (function(global) {
   // map tells the System loader where to look for things
   var map = {
-    'app':                        'app', // 'dist',
+    'app':                        'site/app', // 'dist',
     '@angular':                   'assets/lib/@angular',
     'angular2-in-memory-web-api': 'assets/lib/angular2-in-memory-web-api',
     'rxjs':                       'assets/lib/rxjs'
