@@ -9,13 +9,13 @@ module.exports = function (gulp, plugins) {
             src: {
                 html: 'src/**/*.html',
                 py: 'src/**/*.py',
-                css: 'src/assets/css/**/*.css',
+                css: 'src/css/**/*.css',
                 ico: 'src/assets/**/*.ico',
             },
             target: {
                 html: 'dist',
                 py: 'dist',
-                css: 'dist/app/css',
+                css: 'dist/app',
                 ico: 'dist/assets',
             }
         }
