@@ -1,6 +1,6 @@
 import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
-import {ROUTER_PROVIDERS} from 'angular2/router';
+import {ROUTER_PROVIDERS} from 'angular/router';
 import { FormsModule }    from '@angular/forms';
 
 import { AppComponent }          from './app.component';
