@@ -10,9 +10,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("angular/core");
 var router_1 = require("angular/router");
-var home_component_ts_1 = require("./home/home.component.ts");
-var login_component_ts_1 = require("./login/login.component.ts");
-var schedule_component_ts_1 = require("./shedule/schedule.component.ts");
+var home_component_1 = require("./home.component");
+var login_component_1 = require("./login.component");
+var schedule_component_1 = require("./schedule.component");
 var AppComponent = (function () {
     function AppComponent() {
     }
@@ -24,9 +24,9 @@ AppComponent = __decorate([
         template: "\n    <div class=\"app\">\n      Hello world! \n      <p>Root Component Here</p>\n      <nav>\n        <ul>\n          <li>\n            <a [routerLink]=\" ['Home'] \">Home</a>\n          </li>\n          <li>\n            <a [routerLink]=\" ['Login'] \">Login</a>\n          </li>\n          <li>\n            <a [routerLink=\" ['Schedule'] \">Schedule</a>\n        </ul>\n      </nav>\n      <main>\n        <router-outlet></router-outlet>\n      </main>\n    </div>\n  "
     }),
     router_1.RouteConfig([
-        { path: '/', name: 'Home', component: home_component_ts_1.Home, useAsDefault: true },
-        { path: '/login', name: 'Login', component: login_component_ts_1.Login },
-        { path: '/schedule', name: 'Schedule', component: schedule_component_ts_1.Schedule },
+        { path: '/', name: 'Home', component: home_component_1.Home, useAsDefault: true },
+        { path: '/login', name: 'Login', component: login_component_1.Login },
+        { path: '/schedule', name: 'Schedule', component: schedule_component_1.Schedule },
     ]),
     __metadata("design:paramtypes", [])
 ], AppComponent);
