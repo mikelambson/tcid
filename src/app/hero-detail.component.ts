@@ -4,7 +4,7 @@ import { Hero } from './hero'; import { HeroService } from './hero.service'; @Co
   moduleId: module.id,
   selector: 'my-hero-detail',
   templateUrl: './partials/hero-detail.component.html',
-  styleUrls: [ './css/hero-detail.component.css' ]
+  styleUrls: [ './assets/css/hero-detail.component.css' ]
 })
 export class HeroDetailComponent implements OnInit {
   hero: Hero;
