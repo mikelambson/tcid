@@ -9,12 +9,14 @@ module.exports = function (gulp, plugins) {
             src: {
                 html: 'src/templates/**/*.html',
                 py: 'src/**/*.py',
-                css: 'src/assets/css/**/*.css'
+                css: 'src/assets/css/**/*.css',
+                ico: 'src/assets/**/*.ico',
             },
             target: {
                 html: 'dist/templates',
                 py: 'dist',
-                css: 'dist/assets/css'
+                css: 'dist/assets/css',
+                ico: 'dist/assets',
             }
         }
 
@@ -28,6 +30,9 @@ module.exports = function (gulp, plugins) {
             .pipe(gulp.dest(config.target.css));
 
         var systemJs = gulp.src('./src/assets/systemjs.config.js')
+            .pipe(gulp.dest('dist/assets'));
+        
+        var favicon = gulp.src('./src/assets/favicon.ico')
             .pipe(gulp.dest('dist/assets'));
 
         return merge(html, py, css, systemJs);
