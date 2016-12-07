@@ -2,9 +2,10 @@
   System.config({
     paths: {
       'npm:': 'assets/lib/'
+      
     },
     map: {
-      app: 'assets',
+      app: 'app',
       '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
       '@angular/common': 'npm:@angular/common/bundles/common.umd.js',
       '@angular/compiler': 'npm:@angular/compiler/bundles/compiler.umd.js',
@@ -18,7 +19,7 @@
     },
     packages: {
       app: {
-        main: './boot.js',
+        main: './main.js',
         defaultExtension: 'js'
       },
       rxjs: {
