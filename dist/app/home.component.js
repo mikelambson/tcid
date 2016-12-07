@@ -8,20 +8,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = 'Tour of Heroes';
+var core_1 = require("angular/core");
+var Home = (function () {
+    function Home() {
     }
-    return AppComponent;
+    return Home;
 }());
-AppComponent = __decorate([
+Home = __decorate([
     core_1.Component({
-        moduleId: module.id,
-        selector: 'my-app',
-        template: "\n    <h1>{{title}}</h1>\n    <nav>\n      <a routerLink=\"/dashboard\" routerLinkActive=\"active\">Dashboard</a>\n      <a routerLink=\"/heroes\" routerLinkActive=\"active\">Heroes</a>\n    </nav>\n    <router-outlet></router-outlet>\n  ",
-        styleUrls: ['app.component.css'],
+        selector: 'home',
+        template: "\n    <h1>Home view!</h1>\n  "
     }),
     __metadata("design:paramtypes", [])
-], AppComponent);
-exports.AppComponent = AppComponent;
+], Home);
+exports.Home = Home;
