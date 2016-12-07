@@ -3,8 +3,8 @@ import {Component} from 'angular/core';
 import {RouteConfig} from 'angular/router';
 
 import {Home} from './home/home.component.ts';
-import {Login} from './login/login.component.ts';
-import {Schedule} from './shedule/schedule.component.ts';
+import {Login} from './login.component';
+import {Schedule} from './schedule.component';
 
 
 @Component({
