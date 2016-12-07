@@ -8,7 +8,9 @@
     'app':                        'assets/components', // 'site',
     '@angular':                   'assets/lib/@angular',
     'angular2-in-memory-web-api': 'assets/lib/angular2-in-memory-web-api',
-    'rxjs':                       'assets/lib/rxjs'
+    'rxjs':                       'assets/lib/rxjs',
+    'partials':                   'templates/partials',
+    'css'                         'assets/css'
   };
   // packages tells the System loader how to load when no filename and/or no extension
   var packages = {
