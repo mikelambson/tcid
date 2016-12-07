@@ -26,5 +26,9 @@ def index():
 def serveStaticResource(resource):# Serves misc. resources: css, js.
   return send_from_directory('assets/', resource); 
 
+@FlaskServer.route('/app/<path:app>')
+def serveAppResource(app):		
+   return send_from_directory('app/', app);
+
 if __name__ == "__main__":
     FlaskServer.run(host="0.0.0.0", port=int("3000"), debug=True);
