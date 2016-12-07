@@ -3,7 +3,7 @@ import { BrowserModule }  from '@angular/platform-browser';
 import {ROUTER_PROVIDERS} from 'angular2/router';
 import { FormsModule }    from '@angular/forms';
 
-import { RootComponent }          from './root.component';
+import { AppComponent }          from './app.component';
 import { HomeComponent }          from './home.component';
 import { LoginComponent }         from './login.component';
 import { ScheduleComponent }      from './schedule.component';
@@ -22,7 +22,7 @@ import { AppRoutingModule }    from './app-routing.module';
     AppRoutingModule
   ],
   declarations: [
-    RootComponent,
+    AppComponent,
     HomeComponent,
     LoginComponent,
     ScheduleComponent
