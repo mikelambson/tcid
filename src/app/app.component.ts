@@ -1,4 +1,4 @@
-// root.component.ts
+// app.component.ts
 import {Component} from 'angular/core';
 import {RouteConfig} from 'angular/router';
 
