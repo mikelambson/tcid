@@ -19,7 +19,7 @@
     },
     packages: {
       app: {
-        main: './boot.js',
+        main: './main.js',
         defaultExtension: 'js'
       },
       rxjs: {
