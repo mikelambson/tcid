@@ -2,7 +2,7 @@
   System.config({
     paths: {
       'npm:': 'assets/lib/'
-      'app':  'components/'
+      'components':  'components/'
     },
     map: {
       app: 'assets',
