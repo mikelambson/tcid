@@ -3,8 +3,8 @@ import 'rxjs/add/operator/switchMap'; import { Component, OnInit } from '@angula
 import { Hero } from './hero'; import { HeroService } from './hero.service'; @Component({
   moduleId: module.id,
   selector: 'my-hero-detail',
-  templateUrl: './partials/hero-detail.component.html',
-  styleUrls: [ './css/hero-detail.component.css' ]
+  templateUrl: './hero-detail.component.html',
+  styleUrls: [ './hero-detail.component.css' ]
 })
 export class HeroDetailComponent implements OnInit {
   hero: Hero;
