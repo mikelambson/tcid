@@ -2,7 +2,7 @@
 import {Component} from 'angular/core';
 import {RouteConfig} from 'angular/router';
 
-import {Home} from './home/home.component.ts';
+import {Home} from './home.component';
 import {Login} from './login.component';
 import {Schedule} from './schedule.component';
 
