@@ -10,12 +10,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var router_1 = require("angular/router");
 var forms_1 = require("@angular/forms");
 var app_component_1 = require("./app.component");
-var home_component_1 = require("./home.component");
-var login_component_1 = require("./login.component");
-var schedule_component_1 = require("./schedule.component");
+var dashboard_component_1 = require("./dashboard.component");
+var hero_detail_component_1 = require("./hero-detail.component");
+var heroes_component_1 = require("./heroes.component");
+var hero_service_1 = require("./hero.service");
 var app_routing_module_1 = require("./app-routing.module");
 var AppModule = (function () {
     function AppModule() {
@@ -31,13 +31,12 @@ AppModule = __decorate([
         ],
         declarations: [
             app_component_1.AppComponent,
-            home_component_1.HomeComponent,
-            login_component_1.LoginComponent,
-            schedule_component_1.ScheduleComponent
+            dashboard_component_1.DashboardComponent,
+            hero_detail_component_1.HeroDetailComponent,
+            heroes_component_1.HeroesComponent
         ],
-        bootstrap: [app_component_1.AppComponent,
-            router_1.ROUTER_PROVIDERS
-        ]
+        providers: [hero_service_1.HeroService],
+        bootstrap: [app_component_1.AppComponent]
     }),
     __metadata("design:paramtypes", [])
 ], AppModule);
