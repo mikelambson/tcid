@@ -1,17 +1,12 @@
 import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
-import {ROUTER_PROVIDERS} from 'angular/router';
 import { FormsModule }    from '@angular/forms';
 
-import { AppComponent }          from './app.component';
-import { HomeComponent }          from './home.component';
-import { LoginComponent }         from './login.component';
-import { ScheduleComponent }      from './schedule.component';
-
-//import { HeaderComponent}         from './header.component';
-//import { MainComponent }          from './main.component';
-//import { FooterComponent }        from './footer.component';
-//import { DataService }            from './data.service';
+import { AppComponent }        from './app.component';
+import { DashboardComponent}   from './dashboard.component';
+import { HeroDetailComponent } from './hero-detail.component';
+import { HeroesComponent }     from './heroes.component';
+import { HeroService }         from './hero.service';
 
 import { AppRoutingModule }    from './app-routing.module';
 
@@ -23,18 +18,12 @@ import { AppRoutingModule }    from './app-routing.module';
   ],
   declarations: [
     AppComponent,
-    HomeComponent,
-    LoginComponent,
-    ScheduleComponent
-    //HeaderComponent,
-    //MainComponent,
-    //FooterComponent
+    DashboardComponent,
+    HeroDetailComponent,
+    HeroesComponent
   ],
-  //providers: [ DataService ],
-  bootstrap: [ AppComponent,
-             ROUTER_PROVIDERS
-]})
+  providers: [ HeroService ],
+  bootstrap: [ AppComponent ]
+})
 
 export class AppModule { }
-
-
