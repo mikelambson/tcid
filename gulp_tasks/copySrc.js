@@ -13,9 +13,9 @@ module.exports = function (gulp, plugins) {
                 ico: 'src/assets/**/*.ico',
             },
             target: {
-                html: 'dist/templates',
+                html: 'dist/app/partials',
                 py: 'dist',
-                css: 'dist/assets/css',
+                css: 'dist/app/css',
                 ico: 'dist/assets',
             }
         }
