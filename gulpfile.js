@@ -23,7 +23,7 @@ var config = {
     paths: {
         dist: 'dist',
         ts: [
-            'src/app/**/*.ts'
+            'src/assets/components/**/*.ts'
         ],
         js: [
             './gulp-tasks/*.js',
