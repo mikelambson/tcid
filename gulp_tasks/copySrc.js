@@ -10,13 +10,13 @@ module.exports = function (gulp, plugins) {
                 html: 'src/**/*.html',
                 py: 'src/**/*.py',
                 css: 'src/css/**/*.css',
-                ico: 'src/assets/**/*.ico',
+                ico: 'src/assets/ico/*.ico',
             },
             target: {
                 html: 'dist',
                 py: 'dist',
                 css: 'dist/app',
-                ico: 'dist/assets',
+                ico: 'dist/assets/ico',
             }
         }
 
@@ -29,12 +29,12 @@ module.exports = function (gulp, plugins) {
         var css = gulp.src(config.src.css)
             .pipe(gulp.dest(config.target.css));
 
+        var ico = gulp.src(config.src.ico)
+            .pipe(gulp.dest(config.target.ico));
+
         var systemJs = gulp.src('./src/assets/systemjs.config.js')
             .pipe(gulp.dest('dist/assets'));
         
-        var favicon = gulp.src('./src/assets/favicon.ico')
-            .pipe(gulp.dest('dist/assets'));
-
-        return merge(html, py, css, systemJs);
+        return merge(html, py, css, ico, systemJs);
     }
 };

@@ -31,10 +31,7 @@ import { AppRoutingModule }    from './app-routing.module';
     //FooterComponent
   ],
   //providers: [ DataService ],
-  bootstrap: [ AppComponent,
-             ROUTER_PROVIDERS
-]})
+  bootstrap: [ AppComponent]
+})
 
 export class AppModule { }
-
-
