@@ -30,7 +30,7 @@ var config = {
             './*.js'
         ],
         html: [
-            'src/templates/partials/**/*.html'
+            'src/templates/**/*.html'
         ]
     }
 };
