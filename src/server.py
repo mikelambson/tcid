@@ -26,8 +26,8 @@ def index():
 def serveStaticResource(resource):# Serves misc. resources: css, js.
   return send_from_directory('assets/', resource); 
 
--@FlaskServer.route('/app/<path:app>')		
- -def serveAppResource(app):		
+@FlaskServer.route('/app/<path:app>')		
+ def serveAppResource(app):		
  	return send_from_directory('app/', app);
 
 if __name__ == "__main__":
