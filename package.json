@@ -1,7 +1,7 @@
 {
   "name": "TCID",
   "version": "1.0.0",
-  "description": "Replacement software for county water.",
+  "description": "Replacement software for order scheduling.",
   "scripts": {
     "lint": "tslint ./app/**/*.ts -t verbose"
   },
