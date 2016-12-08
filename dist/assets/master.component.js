@@ -18,7 +18,8 @@ var MasterComponent = (function () {
 MasterComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "<h1>Hello {{name}}!</h1>",
+        templateUrl: '../../templates/master.component.html',
+        styleUrls: [],
     }),
     __metadata("design:paramtypes", [])
 ], MasterComponent);
