@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  template: `<h1>Hello {{name}}!</h1>`,
+  templateUrl: '../../templates/master.component.html',
+  styleUrls: [],
   })
 export class MasterComponent  { name = 'World'; }
