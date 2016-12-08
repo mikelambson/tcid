@@ -5,3 +5,4 @@ _test-output
 _temp
 /node_modules
 *.pyc
+/dist
