@@ -6,4 +6,4 @@ import { Component } from '@angular/core';
   templateUrl: '../../templates/master.component.html',
   styleUrls: [],
   })
-export class MasterComponent  { name = 'World'; }
+export class MasterComponent  { name = 'Master'; }
