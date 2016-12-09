@@ -74,20 +74,19 @@
     </script>
   </head>
   <body onload="myFunction()" style="margin:0;">
-	<div style="display:none; margin:0; padding=0;" id="myDiv" class="animate-bottom">
-	  <my-app align="left"></my-app>
-	  </div><div id="loader"></div>
+	<my-app style="display:none; margin:0; padding=0;"></my-app>
+	<div id="loader"></div>
 		
 <script>
 var myVar;
 
 function myFunction() {
-    myVar = setTimeout(showPage, 3000);
+    myVar = setTimeout(showPage, 1000);
 }
 
 function showPage() {
   document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
+  document.getElementById("my-app").style.display = "block";
 }
 </script>
   </body>
