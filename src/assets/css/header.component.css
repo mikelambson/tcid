@@ -1,7 +1,7 @@
 #header {
-    background: blue; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(blue, black); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(blue, black); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(blue, black); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(blue, black); /* Standard syntax */
+    background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(black, blue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, blue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, blue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, blue); /* Standard syntax */
 }
