@@ -1,5 +1,5 @@
 //master.component.ts
-import { Component, Oninit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app',
