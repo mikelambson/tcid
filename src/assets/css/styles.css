@@ -143,7 +143,7 @@ nav a.router-link-active {
 }
 
 /* Center the loader */
-#loader {
+loader {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -189,6 +189,6 @@ nav a.router-link-active {
   to{ bottom:0; opacity:1 }
 }
 
-#myDiv {
+myDiv {
   display: none;
 }
