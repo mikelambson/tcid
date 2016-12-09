@@ -3,6 +3,6 @@ import { Component } from '@angular/core';
 
 @Component({
 	selector: 'header',
-	template: '<h1>Header Area - for reals!</h1>',
+	templateUrl: '/assets/parts/header-component.html',
 })
 export class HeaderComponent {}
