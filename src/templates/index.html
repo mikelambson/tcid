@@ -73,7 +73,7 @@
       //System.import('app/boot').catch(function(err){ console.error(err); });
     </script>
   </head>
-  <body onload="loadFunction()" style="margin:0;">
+  <body onload="myFunction()" style="margin:0;">
 	<div id="loader"></div>
 	<div style="display:none;" id="myDiv" class="animate-bottom">
 	  <my-app></my-app>
@@ -82,7 +82,7 @@
 <script>
 var myVar;
 
-function loadFunction() {
+function myFunction() {
     myVar = setTimeout(showPage, 3000);
 }
 
