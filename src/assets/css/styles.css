@@ -163,16 +163,6 @@ loader {
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
-
-/* Add animation to "page content" */
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
-}
-
 myDiv {
   display: none;
 }
