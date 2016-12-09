@@ -74,7 +74,12 @@
     </script>
   </head>
   <body onload="loadFunction()" style="margin:0;">
-	<my-app><script>
+	<div id="loader"></div>
+	<div style="display:none;" id="myDiv" class="animate-bottom">
+	  <my-app></my-app>
+	  </div>
+		
+<script>
 var myVar;
 
 function loadFunction() {
@@ -85,6 +90,6 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
-</script></my-app>
+</script>
   </body>
 </html>
