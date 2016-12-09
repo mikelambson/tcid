@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-	  <style>
+	<style>
+		@-webkit-keyframes spin {
+		  0% { -webkit-transform: rotate(0deg); }
+		  100% { -webkit-transform: rotate(360deg); }
+		}
 
-</style>
+		@keyframes spin {
+		  0% { transform: rotate(0deg); }
+  		100% { transform: rotate(360deg); }
+		}
+		  
+		@-webkit-keyframes animatebottom {
+		  from { bottom:-100px; opacity:0 } 
+		  to { bottom:0px; opacity:1 }
+		}
+
+		@keyframes animatebottom { 
+		  from{ bottom:-100px; opacity:0 } 
+		  to{ bottom:0; opacity:1 }
+		}
+	</style>
     <script>document.write('<base href="' + document.location + '" />');</script>
     <title>TCID Scheduling System ~ v. 0.11 </title>
     <meta charset="UTF-8">
