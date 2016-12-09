@@ -1,3 +1,7 @@
+h1 {
+   margin-top: 0;
+   color: #0099CC;
+}    
 #header {
     background: black; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#000033, black); /* For Safari 5.1 to 6.0 */
