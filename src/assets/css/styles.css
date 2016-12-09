@@ -1,4 +1,8 @@
 /* Master Styles  from angular*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
 h1 {
   color: #C8CCFE; 
   font-family: Arial, Helvetica, sans-serif;   
