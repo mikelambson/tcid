@@ -7,7 +7,7 @@ import { MasterComponent }  from './master.component';
 
 @NgModule({
   imports: [ BrowserModule ],
-  declarations: [MasterComponent, HeaderComponent],
+  declarations: [MasterComponent, /*HeaderComponent*/],
   bootstrap: [ MasterComponent ],
 })
 export class MasterModule { }
