@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  templateUrl: '/templates/master-component.html',
+  templateUrl: '/assets/parts/master-component.html',
   styleUrls: [],
   })
 export class MasterComponent  { name = 'Master'; }
