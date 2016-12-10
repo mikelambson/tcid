@@ -1,8 +1,14 @@
-<div id="master">
-<header></header>
-
-<h1>{{name}} Template</h1>
-<p>Hello world.</p>
-<hr />
+<div [ngStyle]="{'min-height': clientHeight + 'px', 'margin-bottom': '-200px'}"> 
+          <!-- 'margin-bootom': '-FooterHeight' -->
+    <header></header> <!-- Navbar here -->
+    <!--<router-outlet></router-outlet>-->
+    <h1>{{name}} Template</h1>
+    <p>Hello world.</p>
+    <hr />
+    <div style="height: 200px"></div> 
+          <!-- 200px is FooterHeight  this will push 
+          the footer so it will not overlap if you have very long content  -->
 </div>
-<footer></footer>  
+
+<footer></footer> <!-- Footer here -->
+
