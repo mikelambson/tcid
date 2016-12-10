@@ -17,7 +17,8 @@ h2, h3 {
   font-weight: lighter;
 }
 body { 
-  margin: 2em; 
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
 }
 body, input[text], button { 
   color: #888; 
