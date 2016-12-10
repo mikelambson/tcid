@@ -3,7 +3,8 @@ h1 {
    padding-left: 2cm;
    color: #FFF;
 }    
-#container {
+#hcontainer {
+   height: 100px;
     background: black; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#000033, black); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#000033, black); /* For Opera 11.1 to 12.0 */
