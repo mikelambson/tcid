@@ -6,4 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './assets/parts/master-component.html',
   styleUrls: [ './assets/css/master.component.css' ],
   })
-export class MasterComponent  { name = 'Master'; }
+
+export class MasterComponent  { name = 'Master'; clientHeight: number;
+        Constructor() { this.clientHeight = window.innerHeight;}
+}
