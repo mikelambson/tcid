@@ -1,4 +1,8 @@
-#fcontainer {
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
   height: 200px;
-  background: #7c7c7c;
+  background: #afafaf;
 }  
