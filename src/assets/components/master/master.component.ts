@@ -1,4 +1,3 @@
-//master.component.ts
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,10 +7,6 @@ import { Component } from '@angular/core';
   })
 
 export class MasterComponent  { 
-	private name: string = 'Master'; 
-	private clientHeight: number;
-	
     constructor() {
-    	this.clientHeight = window.innerHeight;
     }
 }
