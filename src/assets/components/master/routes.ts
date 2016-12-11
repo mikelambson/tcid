@@ -5,7 +5,7 @@ export const routingProviders: any[] = [
 ];
 
 const MasterRoutes: Routes = [
-//    { path: '', redirectTo: '/home', pathMatch: 'full' } for use when the home page component is created
+    { path: '', redirectTo: '/home', pathMatch: 'full' } 
 ];
 
 export const ROUTING: ModuleWithProviders = RouterModule.forRoot(MasterRoutes);
