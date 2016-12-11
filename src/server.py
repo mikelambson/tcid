@@ -35,7 +35,6 @@ def serveStaticResource(resource):# Serves misc. resources: css, js.
   return send_from_directory('assets/', resource); 
 
 def component(path):
-	print path;
 	if path[0] == "":
 		return True;#default index
 	if not os.path.exists("templates/components/{}.html".format(path[0])):

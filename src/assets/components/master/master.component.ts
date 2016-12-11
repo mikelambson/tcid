@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'tcid',
@@ -6,13 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: [ './assets/css/master.component.css' ],
   })
 
-export class MasterComponent  { 
+export class MasterComponent implements OnInit { 
     public base: HTMLBaseElement;
 
     constructor() {
     }
 
-    public ngOninit(): void {
+    public ngOnInit(): void {
         this.base = document.head.getElementsByTagName("base")[0];
         this.base.href = document.location.pathname;
     }
