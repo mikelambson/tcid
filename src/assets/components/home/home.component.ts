@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'tcid',
-  templateUrl: './components/home-component.html'
+  templateUrl: './components/home.html'
   })
 
 export class HomeIndexComponent  { 

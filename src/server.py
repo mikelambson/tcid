@@ -18,9 +18,13 @@ DB = SQLAlchemy(FlaskServer);#Sqlalchemy database handler
 import models;
 engine = create_engine('mysql://tcid:tcid@localhost/tcid?charset=utf8mb4_unicode_520_ci')
                        
-@FlaskServer.route('/')
-def index():
-	return render_template('index.html');
+@FlaskServer.route('/', defaults={"resource": ""}, methods=['GET'])
+@FlaskServer.route('/<path:resource>', methods=['GET'])
+def page(resource):
+	if component(resource.split("/")):#path is valid
+		return render_template('index.html');
+	else:#routing is invalid
+		return render_template('404.html'), 404; 
 
 @FlaskServer.route('/components/<path:resource>', methods=['GET'])
 def component_template(resource):
@@ -29,6 +33,15 @@ def component_template(resource):
 @FlaskServer.route('/assets/<path:resource>')
 def serveStaticResource(resource):# Serves misc. resources: css, js.
   return send_from_directory('assets/', resource); 
+
+def component(path):
+	print path;
+	if path[0] == "":
+		return True;#default index
+	if not os.path.exists("templates/components/{}.html".format(path[0])):
+		return False;#template does not exist
+	else: 
+		return True;
 
 if __name__ == "__main__":
     FlaskServer.run(host="0.0.0.0", port=int("3000"), debug=True);

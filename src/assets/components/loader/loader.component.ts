@@ -3,7 +3,7 @@ import {Observable} from 'rxjs/Rx';
 
 @Component({
   selector: 'loader',
-  templateUrl: './components/loader-component.html',
+  templateUrl: './components/loader.html',
   styleUrls: [ './assets/css/loader.component.css' ],
   })
 
