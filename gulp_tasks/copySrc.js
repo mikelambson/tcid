@@ -7,13 +7,13 @@ module.exports = function (gulp, plugins) {
     return function () {
         var config = {
             src: {
-                html: 'src/**/*.html',
+                html: 'src/templates/**/*.html',
                 py: 'src/**/*.py',
                 css: 'src/assets/css/**/*.css',
                 ico: 'src/assets/ico/*.ico',
             },
             target: {
-                html: 'dist',
+                html: 'dist/templates',
                 py: 'dist',
                 css: 'dist/assets/css',
                 ico: 'dist/assets/ico',
