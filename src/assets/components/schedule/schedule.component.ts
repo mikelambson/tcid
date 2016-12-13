@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'tcid',
-  templateUrl: './components/scheduel.html'
+  templateUrl: './components/schedule.html'
   })
 
 export class ScheduleIndexComponent  { 
