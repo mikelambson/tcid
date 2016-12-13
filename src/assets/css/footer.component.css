@@ -1,8 +1,14 @@
-.footer {
+#fcontainer {
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 200px;
+   /* Set the fixed height of the footer here */
+  height: 75px;
   background: #afafaf;
 }  
+.copyright {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}

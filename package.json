@@ -7,7 +7,7 @@
   },
   "keywords": [],
   "author": "Michael Lambson",
-  "licenses": [],
+  "licenses": "UNLICENSED",
   "dependencies": {
     "@angular/common": "~2.2.0",
     "@angular/compiler": "~2.2.0",
