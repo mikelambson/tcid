@@ -7,7 +7,7 @@ import { ROUTING, routingProviders }  from './routes';
 import { HeaderComponent }	from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 import { HomeModule } from '../home/home.module';
-import { ScheduleModule } '../schedule/schedule.module';
+import { ScheduleModule } from '../schedule/schedule.module';
 
 @NgModule({
   imports: [ BrowserModule, ROUTING, HomeModule ],
