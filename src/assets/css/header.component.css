@@ -56,6 +56,7 @@ h4 {
   color: white;
   padding-top: 2px;
   padding-left: 10px;
+  font-weight: 900;
   border-top: solid 1px grey;
   background: #222; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#919191, #222); /* For Safari 5.1 to 6.0 */
@@ -81,5 +82,6 @@ nav a:hover {
   background-color: #14253f;
 }
 nav a.active {
-  color: #039be5;
+  color: #CCC;
+  background-color: #380000
 }
