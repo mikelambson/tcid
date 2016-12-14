@@ -7,7 +7,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
     template: `
         <nheader>
             <nav class='navbar navbar-sticky-top navbar-dark bg-inverse'>
-                <span class='navbar-brand'>I Wish My Nav Was Automated</span>
+                <span class='navbar-brand'><img src="/assets/images/logo.png" /></span>
                 <ul class='nav navbar-nav pull-xs-right'>
                     <li class='nav-item'>
                         <a class='nav-link' [routerLink]="['/home']">Home</a>
