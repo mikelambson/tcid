@@ -1,6 +1,5 @@
 // navigation.component.ts
 import { Component } from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
     selector: 'navigation',
@@ -10,21 +9,20 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
                 <span class='navbar-brand'><img src="/assets/images/logo.png" /></span>
                 <ul class='nav navbar-nav pull-xs-right'>
                     <li class='nav-item'>
-                        <a class='nav-link' [routerLink]="['/home']">Home</a>
+                        <a class='nav-link' routerLink="/home">Home</a>
                     </li>
                     <li class='nav-item'>
-                        <a class='nav-link' [routerLink]="['/schedule']">Schedule</a>
+                        <a class='nav-link' routerLink="/schedule">Schedule</a>
                     </li>
                     <li class='nav-item'>
-                        <a class='nav-link' [routerLink]="['/manage']">Manage</a>
+                        <a class='nav-link' routerLink="/manage">Manage</a>
                     </li>
                     <li class='nav-item'>
-                        <a class='nav-link' [routerLink]="['/profile']">Profile</a>
+                        <a class='nav-link' routerLink="/profile">Profile</a>
                     </li>
                 </ul>
             </nav>
         </nheader>
     `,
-    directives: [ROUTER_DIRECTIVES]
 })
 export class NavigationComponent {}

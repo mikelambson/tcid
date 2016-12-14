@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MasterComponent }  from './master.component';
 import { Error404Component }  from '../error/404';
 import { ROUTING, routingProviders }  from './routes';
-import { HeaderComponent }	from '../header/header.component';
+import { HeaderModule }	from '../header/header.module';
 import { FooterComponent } from '../footer/footer.component';
 import { HomeModule } from '../home/home.module';
 import { ScheduleModule } from '../schedule/schedule.module';
@@ -13,7 +13,6 @@ import { ScheduleModule } from '../schedule/schedule.module';
   imports: [ BrowserModule, ROUTING, HomeModule ],
   declarations: [
     MasterComponent, 
-    HeaderComponent,
     FooterComponent, 
     Error404Component
   ],
