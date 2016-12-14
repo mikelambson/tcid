@@ -11,12 +11,14 @@ module.exports = function (gulp, plugins) {
                 py: 'src/**/*.py',
                 css: 'src/assets/css/**/*.css',
                 ico: 'src/assets/ico/*.ico',
+                images: 'src/assets/images/**/*.*',
             },
             target: {
                 html: 'dist/templates',
                 py: 'dist',
                 css: 'dist/assets/css',
                 ico: 'dist/assets/ico',
+                images: 'dist/assets/images',
             }
         }
 
@@ -32,9 +34,12 @@ module.exports = function (gulp, plugins) {
         var ico = gulp.src(config.src.ico)
             .pipe(gulp.dest(config.target.ico));
 
+        var images = gulp.src(config.src.images)
+            .pipe(gulp.dest(config.target.images));
+
         var systemJs = gulp.src('./src/assets/systemjs.config.js')
             .pipe(gulp.dest('dist/assets'));
         
-        return merge(html, py, css, ico, systemJs);
+        return merge(html, py, css, ico, images, systemJs);
     }
 };
