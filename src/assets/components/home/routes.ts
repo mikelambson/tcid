@@ -6,5 +6,5 @@ export const routingProviders: any[] = [
 ];
 
 export const ROUTING: ModuleWithProviders = RouterModule.forChild([
-    { path: 'home', component: HomeIndexComponent },
+    { path: 'home', component: HomeIndexComponent},
 ]);

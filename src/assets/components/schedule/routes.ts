@@ -7,4 +7,5 @@ export const routingProviders: any[] = [
 
 export const ROUTING: ModuleWithProviders = RouterModule.forChild([
     { path: 'schedule', component: ScheduleIndexComponent },
+
 ]);
