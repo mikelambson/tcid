@@ -6,8 +6,7 @@ export const routingProviders: any[] = [
 ];
 
 const MasterRoutes: Routes = [
-    { path: '', redirectTo: '/home', pathMatch: 'full' }, 
-    { path: '', redirectTo: '/schedule', pathMatch: 'full' },
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: '**', component: Error404Component }
 ];
 
