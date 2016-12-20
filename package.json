@@ -1,9 +1,11 @@
 {
-  "name": "TCID",
+  "name": "tcid",
   "version": "1.0.0",
   "description": "Replacement software for order scheduling.",
   "scripts": {
-    "lint": "tslint ./app/**/*.ts -t verbose"
+    "lint": "tslint ./src/**/*.ts -t verbose",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
   },
   "keywords": [],
   "author": "Michael Lambson",
@@ -17,30 +19,35 @@
     "@angular/platform-browser": "~2.2.0",
     "@angular/platform-browser-dynamic": "~2.2.0",
     "@angular/router": "~3.2.0",
-    "angular-in-memory-web-api": "~0.1.15",
-    "systemjs": "0.19.40",
+    "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
+    "minimatch": "^3.0.3",
     "reflect-metadata": "^0.1.8",
     "rxjs": "5.0.0-beta.12",
-    "zone.js": "^0.6.26",
-    "bootstrap": "^3.3.7"
+    "systemjs": "0.19.40",
+    "zone.js": "^0.6.26"
   },
   "devDependencies": {
     "@types/core-js": "^0.9.34",
     "@types/node": "^6.0.46",
     "del": "^2.2.0",
+    "glob": "^4.2.2",
     "gulp": "^3.9.1",
     "gulp-load-plugins": "^1.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sym": "^0.0.14",
-    "gulp-typescript": "^2.11.0",
+    "gulp-tsc": "^1.2.6",
+    "gulp-typescript": "^2.14.1",
     "gulp-uglify": "^1.5.2",
     "gulp-useref": "^3.0.5",
     "gulp-util": "^3.0.7",
     "merge-stream": "^1.0.0",
+    "minimatch": "^3.0.3",
     "run-sequence": "^1.1.5",
     "tslint": "^3.15.1",
-    "typescript": "^2.0.10"
+    "typescript": "^2.1.4"
   },
-  "repository": {}
+  "repository": {},
+  "main": "gulpfile.js",
+  "license": "ISC"
 }

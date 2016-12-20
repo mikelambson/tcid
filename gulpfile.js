@@ -22,9 +22,7 @@ gulpTasks.forEach(function(task) {
 var config = {
     paths: {
         dist: 'dist',
-        ts: [
-            'src/assets/**/*.ts'
-        ],
+        ts: 'src/assets/**/*.ts',
         js: [
             './gulp-tasks/*.js',
             './*.js'
@@ -36,5 +34,5 @@ var config = {
 };
 
 gulp.task('local', function(cb) {
-    sequence('clean', [ 'copyLibs', 'copySrc' ], 'transpile', [ 'watch' ], cb);
+    sequence('clean',  [ 'copyLibs', 'copySrc' ], 'transpile', [ 'watch' ],cb);
 });

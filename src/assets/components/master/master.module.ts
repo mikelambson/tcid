@@ -13,7 +13,11 @@ import { HomeModule } from '../home/home.module';
 import { ScheduleModule } from '../schedule/schedule.module';
 
 @NgModule({
-  imports: [ BrowserModule, ROUTING, HomeModule, ScheduleModule, ],
+  imports: [ 
+    BrowserModule, 
+    ROUTING, 
+    HomeModule, 
+    ScheduleModule ],
   declarations: [
     LoaderComponent,
     MasterComponent, 

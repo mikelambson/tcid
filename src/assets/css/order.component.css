@@ -1,0 +1,19 @@
+/*order.component.css*/
+.order {
+	display: block;
+	margin: 5px;
+    width: auto;
+    overflow: hidden;  
+    background: #FFC;
+    color: #000;
+    border-radius: 10px;
+    border: 1px solid #0062A8;
+    border-collapse: separate;
+    table-layout: fixed;
+  }
+   td {
+  	padding-left: 5px;
+  	padding-right: 5px;
+  	width: 12%;
+  	text-align: center;
+  }
