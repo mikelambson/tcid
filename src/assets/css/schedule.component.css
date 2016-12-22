@@ -1,8 +1,23 @@
 /*schedule.component.css*/
 
-/*span {
-  overflow: auto;
+h1 {
+	padding: 10px;
 }
-olist {
-	overflow: auto;
-}*/
+hr { 
+  border: 0; 
+  height: 30px; 
+  border-style: solid; 
+  border-color: #8c8c8c; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+} 
+hr:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #8c8c8c; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}

@@ -1,19 +1,20 @@
+
 <div *ngFor="let order of orders;">
 <table class="order">
 <tr>
 	<td rowspan="2" style="border: none; background: #003C70; color: white;"><b [innerText]="order.scheduled"></b></td>
-	<td style="border-left: 2px solid #666; background: #dfdfdf; border-bottom: 1px solid #600; border-right: 1px solid #600; padding: 5px" [innerText]="order.lateral"></td>
-	<td style="background: #dfdfdf; border-bottom: 1px solid #600; border-right: 1px solid #600; padding: 5px"[innerText]="order.start_time"></td>
-	<td style="background: #dfdfdf; border-bottom: 1px solid #600; text-align: center;  border-right: 1px solid #600; padding: 5px"
+	<td style="border-left: 2px solid #666; background: #dfdfdf; border-bottom: 1px solid #FFF; border-right: 1px solid #600; padding: 5px" [innerText]="order.lateral"></td>
+	<td style="background: #dfdfdf; border-bottom: 1px solid #FFF; border-right: 1px solid #600; padding: 5px"[innerText]="order.start_time"></td>
+	<td style="background: #dfdfdf; border-bottom: 1px solid #FFF; text-align: center;  border-right: 1px solid #600; padding: 5px"
 	[innerText]="order.checks"></td>
-	<td style="background: #dfdfdf; border-bottom: 1px solid #600; padding: 5px" [innerText]="order.stop_time"></td>
-	<td style=" border-left: 2px solid #666; padding: 5px width: auto; font-weight: 900;" [innerText]="order.status"></td>
+	<td style="background: #dfdfdf; border-bottom: 1px solid #FFF; padding: 5px" [innerText]="order.stop_time"></td>
+	<td style=" border-left: 2px solid #444; padding: 5px width: 200px;"><h4  [innerText]="order.status"></h4></td>
 </tr>
 <tr>
-	<td colspan="3" style="border-left: 2px solid #666; text-align: left; background: #dfdfdf; color: #666;">Order# <b [innerText]="order.order_no"></b> | <b [innerText]="order.approx_cfs"></b> CFS | <b [innerText]="order.approx_hrs"></b> Hrs | <b [innerText]="order.approx_af"></b> AF</td>
-	<td style="background: #dfdfdf;"><a href="#" (click)="selectDetail(orderid)">Details</a></td>
-	<td style="border-left: 2px solid #666; color: #600; width: auto;" [innerText]="'Calculated AF: ' +order.calc"></td>
+	<td colspan="3" style="border-left: 2px solid #666; text-align: left; background: #665; color: #dfdfdf;">Order# <b [innerText]="order.order_no"></b> | <b [innerText]="order.approx_cfs"></b> CFS | <b [innerText]="order.approx_hrs"></b> Hrs | <b [innerText]="order.approx_af"></b> AF</td>
+	<td style="background: #665;"><a href="#" (click)="selectDetail(orderid)"><font color="#600">Details</font></a></td>
+	<td style="border-left: 2px solid #444; color: #600; width: 200px;">Calculate AF: <b [innerText]="order.calc"></b></td>
 </tr>
 </table>	
 </div>
-<hr />
+<br>
