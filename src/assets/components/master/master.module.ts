@@ -1,4 +1,5 @@
 import { NgModule }      from '@angular/core';
+import { HttpModule }      from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 
 import {LoaderComponent} from '../loader/loader.component';
@@ -15,6 +16,7 @@ import { ScheduleModule } from '../schedule/schedule.module';
 @NgModule({
   imports: [ 
     BrowserModule, 
+    HttpModule, 
     ROUTING, 
     HomeModule, 
     ScheduleModule ],
