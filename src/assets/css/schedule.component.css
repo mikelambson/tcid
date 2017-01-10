@@ -21,3 +21,27 @@ hr:before {
   border-width: 0 0 1px 0; 
   border-radius: 20px; 
 }
+#oheader {
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: -20px;
+  margin-bottom 0;
+  width: auto;
+  overflow: hidden;
+  border-bottom: 3px ridge;
+  font-weight: bold;
+  font-size: 4;
+  color: 600;
+  text-align: ridge;
+  column-count: 6;
+  -moz-column-count: 6;
+  -webkit-column-count: 6;
+  column-width: 15%;
+  -moz-column-width: 15%;
+  -webkit-column-width: 15%;
+}
+th {
+  display: block;
+  text-align: center;  
+}
