@@ -26,11 +26,10 @@ export class Order {
 	this.approx_cfs = data["approx_cfs"] || "";
 	this.approx_hrs = data["approx_hrs"] || "";
 	this.approx_af = data["approx_af"] || "";
-	this.calc = number;
+	this.calc = afcalc;
 	};
 }
 
-function number(){
-	 let number = stop_time == null ? (DATEDIFF(minute, start_time, Date()) / 60.0) * checks * 0.0825 : (DATEDIFF(minute, start_time, stop_time) / 60.0) * checks * 0.0825;
-}	
+let afcalc = this.stop_time == null ? (DATEDIFF(minute, this.start_time, Date()) / 60.0) * this.checks * 0.0825 : (DATEDIFF(minute, this.start_time, this.stop_time) / 60.0) * this.checks * 0.0825;
+	
 
