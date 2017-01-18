@@ -1,5 +1,6 @@
 // order.ts
 
+
 export class Order {
 	order_no: string;
 	scheduled: string;
@@ -24,7 +25,7 @@ export class Order {
 	this.approx_cfs = data["approx_cfs"] || "";
 	this.approx_hrs = data["approx_hrs"] || "";
 	this.approx_af = data["approx_af"] || "";
-	this.calc = let result: number = stop_time == null ? (DATEDIFF(minute, start_time, Date()) / 60.0) * cfs * 0.0825 : (DATEDIFF(minute, start_time, stop_time) / 60.0) * cfs * 0.0825;
+	//this.calc = let result: number = stop_time == null ? (DATEDIFF(minute, start_time, Date()) / 60.0) * cfs * 0.0825 : (DATEDIFF(minute, start_time, stop_time) / 60.0) * cfs * 0.0825;
 	};
 	
 }

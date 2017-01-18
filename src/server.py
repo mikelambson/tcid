@@ -41,7 +41,7 @@ def component(path):
 		return False;#template does not exist
 	else: 
 		return True;
-
+"""
 @FlaskServer.route('/schedule', methods=['GET'])
 def schedule(name):
 	#some kind of authentication
@@ -52,6 +52,6 @@ def schedule(name):
 		#have that model query the database
 		#return a jsonified version (see sample below)
 		return jsonify(["stuff", "more stuff", "most stuff"]);
-
+"""
 if __name__ == "__main__":
     FlaskServer.run(host="0.0.0.0", port=int("3000"), debug=True);
