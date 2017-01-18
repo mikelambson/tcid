@@ -1,18 +1,19 @@
 // order.ts
 
 
+
 export class Order {
 	order_no: string;
 	scheduled: string;
 	lateral: string;
-	start_time: string;
-	checks: string;
-	stop_time: string;
+	start_time: any;
+	checks: any;
+	stop_time: any;
 	status: string;
 	approx_cfs: string;
 	approx_hrs: string;
 	approx_af: string;
-	calc: string;
+	calc: any;
 
 	constructor(data: {} = {}) {
 	this.order_no = data["order_no"] || "";
@@ -25,7 +26,11 @@ export class Order {
 	this.approx_cfs = data["approx_cfs"] || "";
 	this.approx_hrs = data["approx_hrs"] || "";
 	this.approx_af = data["approx_af"] || "";
-	//this.calc = let result: number = stop_time == null ? (DATEDIFF(minute, start_time, Date()) / 60.0) * cfs * 0.0825 : (DATEDIFF(minute, start_time, stop_time) / 60.0) * cfs * 0.0825;
+	this.calc = number;
 	};
-	
 }
+
+function number(){
+	 let number = stop_time == null ? (DATEDIFF(minute, start_time, Date()) / 60.0) * checks * 0.0825 : (DATEDIFF(minute, start_time, stop_time) / 60.0) * checks * 0.0825;
+}	
+
