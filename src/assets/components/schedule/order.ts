@@ -8,12 +8,12 @@ export class Order {
 	lateral: string;
 	start_time: string;
 	checks: string;
-	stop_time: any;
-	status: any;
-	approx_cfs: any;
-	approx_hrs: any;
-	approx_af: any;
-	calc: any;
+	stop_time: string;
+	status: string;
+	approx_cfs: string;
+	approx_hrs: string;
+	approx_af: string;
+	calc: string;
 
 	constructor(data: {} = {}) {
 	this.order_no = data["order_no"] || "";
