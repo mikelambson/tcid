@@ -3,7 +3,7 @@
 
 
 export class Order {
-	order_no: string;
+	order_no: any;
 	scheduled: string;
 	lateral: string;
 	start_time: any;
