@@ -30,6 +30,6 @@ export class Order {
 	};
 }
 
-let afcalc = this.stop_time == null ? (DATEDIFF(minute, this.start_time, Date()) / 60.0) * this.checks * 0.0825 : (DATEDIFF(minute, this.start_time, this.stop_time) / 60.0) * this.checks * 0.0825;
+let afcalc = this.stop_time == null ? (Date.parse(this.start_time) / 1000.0 / 60.0 / 60.0) * this.checks * 0.0825 : (Date.parse(this.start_time) /1000.0 / 60.0 / 60.0) * this.checks * 0.0825;
 	
 
