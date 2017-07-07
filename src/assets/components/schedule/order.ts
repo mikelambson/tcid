@@ -6,7 +6,7 @@ export class Order {
 	scheduled: string;
 	lateral: string;
 	start_time: string;
-	checks: float;
+	checks: any;
 	stop_time: string;
 	status: string;
 	approx_cfs: string;
@@ -25,7 +25,7 @@ export class Order {
 	this.approx_cfs = data["approx_cfs"] || "";
 	this.approx_hrs = data["approx_hrs"] || "";
 	this.approx_af = data["approx_af"] || "";
-	this.calc = (!this.stop_time ? ((new Date().getTime() - new Date(this.start_time).getTime()) / 1000.0 / 60.0 / 60.0) * this.checks * 0.0825 : ((new Date(this.stop_time).getTime() - new Date(this.start_time).getTime()) /1000.0 / 60.0 / 60.0) * this.checks * 0.0825); 
+	this.calc = (!this.stop_time ? ((new Date().getTime() - new Date(this.start_time).getTime()) / 1000.0 / 60.0 / 60.0) * (this.checks) as number * 0.0825 : ((new Date(this.stop_time).getTime() - new Date(this.start_time).getTime()) /1000.0 / 60.0 / 60.0) * (this.checks) as number * 0.0825); 
 	
 	console.log(this.calc);
 	};
