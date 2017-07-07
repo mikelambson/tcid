@@ -25,7 +25,7 @@ export class OrderComponent implements OnInit {
     .map((data: {}): Order => new Order(data))
     .subscribe((order: Order): number => this.orders.push(order),  
       (error: string): void => console.log('An unexpected error has occurred: '+error), 
-      (): void => console.log('Get request completed. Remind me to teach you about Observables Mike.'));
+      (): void => console.log('Get request completed.'));
     //what's above will replace what's below
     this.orderService.getOrders().then(orders => this.orders = orders);
   }
