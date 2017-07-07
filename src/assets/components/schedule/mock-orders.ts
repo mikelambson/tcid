@@ -1,5 +1,4 @@
 // mock-orders.ts
-import { Order } from './order'
 
 export const ORDERS: Order[] = [ 
     {order_no: '12345',
