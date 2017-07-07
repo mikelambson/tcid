@@ -29,7 +29,7 @@ export class Order {
 	};
 	
 	ngOnInit(){ 
-		var afcalc = this.stop_time == null ? ((Date.parse(Date.now()) - Date.parse(this.start_time)) / 1000.0 / 60.0 / 60.0) * this.checks * 0.0825 : ((Date.parse(this.stop_time) - Date.parse(this.start_time)) /1000.0 / 60.0 / 60.0) * this.checks * 0.0825;
+		this.afcalc(this.stop_time == null ? ((Date.parse(Date.now()) - Date.parse(this.start_time)) / 1000.0 / 60.0 / 60.0) * this.checks * 0.0825 : ((Date.parse(this.stop_time) - Date.parse(this.start_time)) /1000.0 / 60.0 / 60.0) * this.checks * 0.0825);
 	};
 };
 
