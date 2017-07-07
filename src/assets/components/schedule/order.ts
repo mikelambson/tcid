@@ -29,6 +29,6 @@ export class Order {
 	};
 };
 
-let afcalc = this.stop_time == null ? (Date.parse(this.start_time) / 1000.0 / 60.0 / 60.0) * this.checks * 0.0825 : (Date.parse(this.start_time) /1000.0 / 60.0 / 60.0) * this.checks * 0.0825;
-let this.calc = {{afcalc}};	
+let afcalc = this.stop_time == null ? (Date.parse(this.start_time) / 1000.0 / 60.0 / 60.0) * this.checks * 0.0825 : (Date.parse(this.start_time) /1000.0 / 60.0 / 60.0) * this.checks * 0.0825 || "";
+let this.calc = afcalc || "";	
 
