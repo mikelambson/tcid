@@ -26,11 +26,9 @@ export class Order {
 	this.approx_cfs = data["approx_cfs"] || "";
 	this.approx_hrs = data["approx_hrs"] || "";
 	this.approx_af = data["approx_af"] || "";
-	this.calc = data[ afcalc ];
+	this.calc = this.stop_time == null ? ((Date.parse(Date()) - Date.parse(this.start_time)) / 1000.0 / 60.0 / 60.0) * this.checks * 0.0825 : ((Date.parse(this.stop_time) - Date.parse(this.start_time)) /1000.0 / 60.0 / 60.0) * this.checks * 0.0825;
 	};
 	
-	afcalc() => { this.stop_time == null ? ((Date.parse(Date()) - Date.parse(this.start_time)) / 1000.0 / 60.0 / 60.0) * this.checks * 0.0825 : ((Date.parse(this.stop_time) - Date.parse(this.start_time)) /1000.0 / 60.0 / 60.0) * this.checks * 0.0825;
-	};	
 };
 
 
