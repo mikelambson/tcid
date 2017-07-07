@@ -3,17 +3,17 @@
 
 
 export class Order {
-	order_no: string;
-	scheduled: string;
-	lateral: string;
-	start_time: string;
-	checks: number;
-	stop_time: string;
-	status: string;
-	approx_cfs: string;
-	approx_hrs: string;
-	approx_af: string;
-	calc: number;
+	order_no: any;
+	scheduled: any;
+	lateral: any;
+	start_time: any;
+	checks: any;
+	stop_time: any;
+	status: any;
+	approx_cfs: any;
+	approx_hrs: any;
+	approx_af: any;
+	calc: any;
 
 	constructor(data: {} = {}) {
 	this.order_no = data["order_no"] || "";
