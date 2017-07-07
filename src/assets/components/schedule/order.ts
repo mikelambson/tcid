@@ -1,6 +1,7 @@
 // order.ts
 import { Component } from '@angular/core';
 
+var now = new Date().valueOf();
 
 export class Order {
 	order_no: string;
@@ -26,7 +27,7 @@ export class Order {
 	this.approx_cfs = data["approx_cfs"] || "";
 	this.approx_hrs = data["approx_hrs"] || "";
 	this.approx_af = data["approx_af"] || "";
-	this.calc = this.stop_time == null ? ((Date.parse(+new Date()) - Date.parse(this.start_time)) / 1000.0 / 60.0 / 60.0) * this.checks * 0.0825 : ((Date.parse(this.stop_time) - Date.parse(this.start_time)) /1000.0 / 60.0 / 60.0) * this.checks * 0.0825;
+	this.calc = this.stop_time == null ? ((now - Date.parse(this.start_time)) / 1000.0 / 60.0 / 60.0) * this.checks * 0.0825 : ((Date.parse(this.stop_time) - Date.parse(this.start_time)) /1000.0 / 60.0 / 60.0) * this.checks * 0.0825;
 	};
 	
 };
