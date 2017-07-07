@@ -3,11 +3,11 @@
 
 
 export class Order {
-	order_no: any;
-	scheduled: any;
-	lateral: any;
-	start_time: any;
-	checks: any;
+	order_no: string;
+	scheduled: string;
+	lateral: string;
+	start_time: string;
+	checks: string;
 	stop_time: any;
 	status: any;
 	approx_cfs: any;
