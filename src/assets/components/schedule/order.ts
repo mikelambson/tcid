@@ -13,7 +13,7 @@ export class Order {
 	approx_cfs: string;
 	approx_hrs: string;
 	approx_af: string;
-	calc: any;
+	calc: number;
 
 	constructor(data: {} = {}) {
 	this.order_no = data["order_no"] || "";
