@@ -7,13 +7,13 @@ export class Order {
 	scheduled: string;
 	lateral: string;
 	start_time: string;
-	checks: string;
+	checks: number;
 	stop_time: string;
 	status: string;
 	approx_cfs: string;
 	approx_hrs: string;
 	approx_af: string;
-	calc: any;
+	calc: number;
 
 	constructor(data: {} = {}) {
 	this.order_no = data["order_no"] || "";
