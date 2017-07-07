@@ -26,7 +26,7 @@ export class Order {
 	this.approx_cfs = data["approx_cfs"] || "";
 	this.approx_hrs = data["approx_hrs"] || "";
 	this.approx_af = data["approx_af"] || "";
-	this.calc = "afcalc";
+	this.calc = afcalc;
 	};
 };
 
