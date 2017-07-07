@@ -12,7 +12,7 @@ export class Order {
 	approx_cfs: string;
 	approx_hrs: string;
 	approx_af: string;
-	calc: any;
+	
 
 	constructor(data: {} = {}) {
 	this.order_no = data["order_no"] || "";
@@ -27,7 +27,7 @@ export class Order {
 	this.approx_af = data["approx_af"] || "";
 	this.calc = (!this.stop_time ? ((new Date().getTime() - new Date(this.start_time).getTime()) / 1000.0 / 60.0 / 60.0) * this.checks * 0.0825 : ((new Date(this.stop_time).getTime() - new Date(this.start_time).getTime()) /1000.0 / 60.0 / 60.0) * this.checks * 0.0825); 
 	
-	console.log(this.calc);
+	console.log(calc);
 	};
 
 };
