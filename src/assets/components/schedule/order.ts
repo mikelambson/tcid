@@ -6,7 +6,7 @@ export class Order {
 	scheduled: string;
 	lateral: string;
 	start_time: string;
-	checks: string;
+	checks: number;
 	stop_time: string;
 	status: string;
 	approx_cfs: string;
