@@ -29,11 +29,12 @@ export class Order {
 	this.calc = afcalc["CALC"]
 	};
 	
+	function afcalc() {
+	return CALC(this.stop_time == null ? ((Date.parse(Date()) - Date.parse(this.start_time)) / 1000.0 / 60.0 / 60.0) * this.checks * 0.0825 : ((Date.parse(this.stop_time) - Date.parse(this.start_time)) /1000.0 / 60.0 / 60.0) * this.checks * 0.0825);
+	};	
 };
 
-function afcalc() {
-	return CALC(this.stop_time == null ? ((Date.parse(Date()) - Date.parse(this.start_time)) / 1000.0 / 60.0 / 60.0) * this.checks * 0.0825 : ((Date.parse(this.stop_time) - Date.parse(this.start_time)) /1000.0 / 60.0 / 60.0) * this.checks * 0.0825);
-};
+
 	
 
 
