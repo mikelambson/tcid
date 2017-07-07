@@ -1,7 +1,5 @@
 // order.ts
-import { Component, OnInit } from '@angular/core';
-import { Http, Response } from '@angular/http';
-import { Observable } from 'rxjs/Rx';
+import { Component } from '@angular/core';
 
 
 export class Order {
@@ -28,7 +26,7 @@ export class Order {
 	this.approx_cfs = data["approx_cfs"] || "";
 	this.approx_hrs = data["approx_hrs"] || "";
 	this.approx_af = data["approx_af"] || "";
-	this.calc = this.stop_time == null ? ((Date.parse(Date()) - Date.parse(this.start_time)) / 1000.0 / 60.0 / 60.0) * this.checks * 0.0825 :
+	this.calc = calc() => this.stop_time == null ? ((Date.parse(Date()) - Date.parse(this.start_time)) / 1000.0 / 60.0 / 60.0) * this.checks * 0.0825 :
 	((Date.parse(this.stop_time) - Date.parse(this.start_time)) /1000.0 / 60.0 / 60.0) * this.checks * 0.0825;
 	};
 };
