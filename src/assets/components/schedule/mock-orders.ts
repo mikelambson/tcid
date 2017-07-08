@@ -12,7 +12,7 @@ export const ORDERS: Order[] = [
 	approx_cfs: "25.00",
 	approx_hrs: "22",
 	approx_af: "45.38",
-	calc: "45.56",},
+	},
 
     {order_no: "12346",
 	scheduled: "07/6/17 11:45",
@@ -24,7 +24,7 @@ export const ORDERS: Order[] = [
 	approx_cfs: "25.00",
 	approx_hrs: "10",
 	approx_af: "20.63",
-	calc: "8.35",},
+	},
 
 	{order_no: "12346",
 	scheduled: "08/17/17 11:45",
@@ -36,7 +36,7 @@ export const ORDERS: Order[] = [
 	approx_cfs: "25.00",
 	approx_hrs: "10",
 	approx_af: "20.63",
-	calc: "8.35",},
+	},
 
 	{order_no: "12346",
 	scheduled: "08/17/17 11:45",
@@ -48,5 +48,5 @@ export const ORDERS: Order[] = [
 	approx_cfs: "25.00",
 	approx_hrs: "10",
 	approx_af: "20.63",
-	calc: "8.35",}
+	}
 ];
