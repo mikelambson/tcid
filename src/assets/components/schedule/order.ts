@@ -1,4 +1,5 @@
 // order.ts
+//This contains the fields of data to display for each order shown.
 
 export class Order {
 	order_no: string;
