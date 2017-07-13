@@ -21,7 +21,7 @@ import { AdminModule } from '../admin/admin.module';
     ROUTING, 
     HomeModule, 
     ScheduleModule,
-    AdminModule
+    
   ],
   declarations: [
     LoaderComponent,
