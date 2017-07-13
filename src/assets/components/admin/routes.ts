@@ -1,6 +1,6 @@
 import { ModuleWithProviders } from "@angular/core";
 import {RouterModule} from '@angular/router';
-import {AdminIndexComponent} from './home.component';
+import {AdminIndexComponent} from './admin.component';
 
 export const routingProviders: any[] = [
 ];
