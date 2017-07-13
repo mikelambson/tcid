@@ -4,6 +4,7 @@ import {CommonModule} from '@angular/common';
 import {ScheduleIndexComponent} from './schedule.component';
 import {ROUTING, routingProviders} from './routes';
 import {OrderComponent} from './order.component'
+//import {ScheduleMenuComponent} from './schedulemenu.component';
 
 @NgModule({
 	imports: [CommonModule, ROUTING], 
