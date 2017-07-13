@@ -1,3 +1,4 @@
+//routes.ts
 import { ModuleWithProviders } from "@angular/core";
 import {RouterModule} from '@angular/router';
 import {ScheduleIndexComponent} from './schedule.component';
