@@ -1,5 +1,4 @@
 // order.ts
-import { Component, OnInit } from '@angular/core';
 
 export class Order {
 	order_no: string;
@@ -26,7 +25,7 @@ export class Order {
 	this.approx_hrs = data["approx_hrs"] || "";
 	this.approx_af = data["approx_af"] || "";
 	this.calc = data[(!this.stop_time ? ((new Date().getTime() - new Date(this.start_time).getTime()) / 1000.0 / 60.0 / 60.0) * this.checks * 0.0825 : ((new Date(this.stop_time).getTime() - new Date(this.start_time).getTime()) /1000.0 / 60.0 / 60.0) * this.checks * 0.0825)]; 
-	
+	//Calculate the order's acre footage from the stop time, or to current time if order is still running.
 	console.log(this.calc);
 	};
 
