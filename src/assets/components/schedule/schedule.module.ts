@@ -1,3 +1,4 @@
+//schedule.module.ts
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {ScheduleIndexComponent} from './schedule.component';
