@@ -1,6 +1,6 @@
 //schedulemenu.component.ts
 
-/**This is a placeholder for the scheduling submenu.
+/**This is a placeholder for the schedule submenu.
 Must have as main selectors, the divisions: Truckee, West, Central, East
 Next will be the main heads in each selector:
 
