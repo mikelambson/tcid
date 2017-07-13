@@ -12,6 +12,7 @@ import { FooterComponent } from '../footer/footer.component';
 import { HomeModule } from '../home/home.module';
 
 import { ScheduleModule } from '../schedule/schedule.module';
+import { AdminModule } from '../admin/admin.module';
 
 @NgModule({
   imports: [ 
