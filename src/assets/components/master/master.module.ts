@@ -20,7 +20,9 @@ import { AdminModule } from '../admin/admin.module';
     HttpModule, 
     ROUTING, 
     HomeModule, 
-    ScheduleModule ],
+    ScheduleModule,
+    AdminModule
+  ],
   declarations: [
     LoaderComponent,
     MasterComponent, 
