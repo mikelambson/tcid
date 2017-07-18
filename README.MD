@@ -7,6 +7,7 @@
 This project contains raw development and unfinished work. 
 
 Notes:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Installation:
  - Pull changes
  - Run npm install/update
