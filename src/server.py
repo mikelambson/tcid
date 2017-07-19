@@ -54,4 +54,4 @@ def schedule(name):
 		return jsonify(["stuff", "more stuff", "most stuff"]);
 """
 if __name__ == "__main__":
-    FlaskServer.run(host="0.0.0.0", port=int("3000"), debug=True);
+    FlaskServer.run(host="0.0.0.0", port=int("8080"), debug=True);

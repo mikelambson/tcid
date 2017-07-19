@@ -29,12 +29,12 @@
     "minimatch": "^3.0.3"
   },
   "devDependencies": {
-    "@types/node": "^6.0.46",
     "@types/jasmine": "^2.5.36",
+    "@types/node": "^6.0.46",
     "del": "^2.2.0",
     "glob": "^4.2.2",
     "gulp": "^3.9.1",
-    "gulp-load-plugins": "^1.2.0",
+    "gulp-load-plugins": "^1.5.0",
     "gulp-rename": "^1.2.2",
     "gulp-sym": "^0.0.14",
     "gulp-tsc": "^1.2.6",
