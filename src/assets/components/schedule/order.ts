@@ -19,7 +19,7 @@ export class Order {
 		let b = new stop_time().amDifference(start_time);
 		calc = !stop_time ? a * checks * 0.0825 : b * checks * 0.0825;
 		return calc;
-	};
+		};
 	}
 
 	constructor(data: {} = {}) {
@@ -37,13 +37,6 @@ export class Order {
 	//Calculate the order's acre footage from the stop time, or to current time if order is still running.
 	console.log(this.calc);
 	
-	
+	};
 
 };
-
-
-	
-
-
-
-
