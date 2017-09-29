@@ -3,6 +3,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { MomentModule } from 'angular2-moment';
 
+
 export class Order {
 	order_no: string;
 	scheduled: string;
@@ -31,12 +32,21 @@ export class Order {
 		//Calculate the order's acre footage from the stop time, or to current time if order is still running.
 		console.log(this.calc);
 	};
-
-	transform(calc: number) {
-	let a = new Date().amDifference(this.start_time);
-	let b = new this.stop_time().amDifference(this.start_time);
-	calc = !this.stop_time ? a * this.checks * 0.0825 : b * this.checks * 0.0825;
-	return calc;
+	
+	scope.getDate = function() {
+	return (new Date).toLocaleFormat("%A, %B %e, %Y");
+	};
+	
+	transform(calc: string) {
+	var calc = calc();	
+	var a = this.getDate().amDifference(this.start_time).hours(true);
+	var b = this.stop_time().amDifference(this.start_time).hours(true);
+		calc() {
+			if (this.stop_time = 0) { calc = a() * this.checks() * 0.0825; };
+			else if (this.start_time = 0) { calc = "--"; };
+			else { calc = b() * this.checks() * 0.0825;	};
+			return calc;
+		};
 	};
 	
 };
