@@ -1,5 +1,6 @@
 // order.ts
 //This contains the fields of data to display for each order shown.
+import { Pipe, PipeTransform } from '@angular/core';
 import { MomentModule } from 'angular2-moment';
 
 export class Order {
@@ -13,7 +14,13 @@ export class Order {
 	approx_cfs: string;
 	approx_hrs: string;
 	approx_af: string;
-	calc: any;
+	transform(calc: string) {
+		let a = new Date().amDifference(start_time);
+		let b = new stop_time().amDifference(start_time);
+		calc = !stop_time ? a * checks * 0.0825 : b * checks * 0.0825;
+		return calc;
+	};
+	}
 
 	constructor(data: {} = {}) {
 	this.order_no = data["order_no"] || "";
@@ -26,19 +33,11 @@ export class Order {
 	this.approx_cfs = data["approx_cfs"] || "";
 	this.approx_hrs = data["approx_hrs"] || "";
 	this.approx_af = data["approx_af"] || "";
-	this.calc = af();
+	//this.calc = af();
 	//Calculate the order's acre footage from the stop time, or to current time if order is still running.
 	console.log(this.calc);
 	
-	function af() {
-	let a = (myDate | amDifference: start_time :'hours' : true);
-	let b = (stop_time | amDifference: start_time : 'hours' : true);
-	let c = !stop_time ? a * checks * 0.0825 : b * checks * 0.0825;
-	return c
-	};
 	
-	};
-
 
 };
 
