@@ -20,8 +20,7 @@ export class Order {
 		calc = !stop_time ? a * checks * 0.0825 : b * checks * 0.0825;
 		return calc;
 		};
-	}
-
+	
 	constructor(data: {} = {}) {
 	this.order_no = data["order_no"] || "";
 	this.scheduled = data["scheduled"] || "";
