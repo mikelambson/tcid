@@ -10,7 +10,7 @@ module.exports = function (gulp, plugins) {
             'node_modules/@types/jasmine/index.d.ts',
             'node_modules/@types/node/index.d.ts',
             'src/assets/**/*.ts'
-        ]).pipe(ts(tsProject));
+        ]).pipe(tsProject());
 
         return tsResult.js
             .pipe(gulp.dest('dist/assets'));

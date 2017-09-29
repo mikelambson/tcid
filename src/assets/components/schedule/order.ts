@@ -34,7 +34,7 @@ export class Order {
 	};
 	
 	scope.getDate = function() {
-	return (new Date).toLocaleFormat("%A, %B %e, %Y");
+	return (new Date);
 	};
 	
 	transform(calc: string) {
