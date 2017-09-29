@@ -16,5 +16,5 @@ Installation:
 
 This is for my bad memory:
 Add all new files: git add .
-Store changes: git commit
+Store changes: git commit -m "message here"
 Send files: git push
