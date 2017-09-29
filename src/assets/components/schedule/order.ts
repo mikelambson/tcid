@@ -31,13 +31,10 @@ export class Order {
 	console.log(this.calc);
 	
 	function af() {
-	//var a = (myDate | amDifference: start_time :'hours' : true);
-	//var b = (stop_time | amDifference: start_time : 'hours' : true);
-	//return function caf() {
-	//	var c = !stop_time ? a * checks * 0.0825 : b * checks * 0.0825;
-	//	return c;
-	return 15.5*60*.0825
-		//}
+	let a = (myDate | amDifference: start_time :'hours' : true);
+	let b = (stop_time | amDifference: start_time : 'hours' : true);
+	let c = !stop_time ? a * checks * 0.0825 : b * checks * 0.0825;
+	return c
 	};
 	
 	};
