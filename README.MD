@@ -12,7 +12,7 @@ Installation:
  - Pull changes
  - Run npm install/update
  - Gulp local
- - Start server
+ - Start server ~ tcid/dist python server.py
 
 This is for my bad memory:
 Add all new files: git add .
