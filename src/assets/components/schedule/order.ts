@@ -9,13 +9,13 @@ export class Order {
 	scheduled: string;
 	lateral: string;
 	start_time: string;
-	checks: number;
+	checks: string;
 	stop_time: string;
 	status: string;
 	approx_cfs: string;
 	approx_hrs: string;
 	approx_af: string;
-	calc: any;
+	calc: string;
 
 	
 	constructor(data: {} = {}) {
@@ -30,23 +30,21 @@ export class Order {
 		this.approx_hrs = data["approx_hrs"] || "";
 		this.approx_af = data["approx_af"] || "";
 		//Calculate the order's acre footage from the stop time, or to current time if order is still running.
-		console.log(this.calc);
-	};
-	
-	scope.getDate = function() {
-	return (new Date);
-	};
-	
-	transform(calc: string) {
-	var calc = calc();	
-	var a = this.getDate().amDifference(this.start_time).hours(true);
-	var b = this.stop_time().amDifference(this.start_time).hours(true);
-		calc() {
-			if (this.stop_time = 0) { calc = a() * this.checks() * 0.0825; };
-			else if (this.start_time = 0) { calc = "--"; };
-			else { calc = b() * this.checks() * 0.0825;	};
-			return calc;
+		
+	function calc() {
+		let date = new Date();
+		let time = date.toUTCString();
+		let a = this.time().amDifference(this.start_time).hours(true);
+		let b = this.stop_time().amDifference(this.start_time).hours(true);
+		function calculate() {
+			if (this.stop_time = undefined) { a() * this.checks() * 0.0825; return calculate; };
+			else if (this.start_time = undefined) { "--"; return calculate; };
+			else { b() * this.checks() * 0.0825; return calculate; };
 		};
+		let calc = calculate();
+		return calc;
 	};
 	
+	console.log(this.calc);
+	};
 };
