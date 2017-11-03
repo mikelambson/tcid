@@ -29,9 +29,10 @@ export class Order {
 		this.approx_cfs = data["approx_cfs"] || "";
 		this.approx_hrs = data["approx_hrs"] || "";
 		this.approx_af = data["approx_af"] || "";
+		this.calc = calcf["calcf"];
 		//Calculate the order's acre footage from the stop time, or to current time if order is still running.
 		
-	function calc() {
+	function calcf() {
 		let date = new Date();
 		let time = date.toUTCString();
 		let a = this.time().amDifference(this.start_time).hours(true);
@@ -41,8 +42,8 @@ export class Order {
 			else if (this.start_time = undefined) { "--"; return calculate; };
 			else { b() * this.checks() * 0.0825; return calculate; };
 		};
-		let calc = calculate();
-		return calc;
+		let calcf = calculate();
+		return calcf;
 	};
 	
 	console.log(this.calc);
